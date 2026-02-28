@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gravity Map — Gravitas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-page="map">
+  <div class="map-container">
+    <div class="map-header">
+      <a href="/profile" class="back-btn">← Back</a>
+      <h2 class="map-title">Gravity Map</h2>
+      <div class="map-controls">
+        <button class="map-ctrl-btn active" id="ctrl-connections">Connections</button>
+        <button class="map-ctrl-btn" id="ctrl-nearby">Nearby</button>
+        <button class="map-ctrl-btn" id="ctrl-weight">Weights</button>
+      </div>
+    </div>
+    <canvas id="gravity-canvas"></canvas>
+    <div class="map-legend">
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#818cf8"></div>High match (&gt;80%)
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#34d399"></div>Good match (60–80%)
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#fb923c"></div>Low match (&lt;60%)
+      </div>
+    </div>
+    <div class="map-hud">
+      <div class="hud-stat">
+        <span class="hud-num" id="hud-nearby">0</span>
+        <span class="hud-label">Nearby</span>
+      </div>
+      <div class="hud-stat">
+        <span class="hud-num" id="hud-matches">0</span>
+        <span class="hud-label">Top Matches</span>
+      </div>
+      <div class="hud-stat">
+        <span class="hud-num" id="hud-city">—</span>
+        <span class="hud-label">City</span>
+      </div>
+    </div>
+  </div>
+
+  <button id="theme-toggle" class="theme-toggle" title="Toggle Dark Mode">🌙</button>
+  <script src="app.js"></script>
+</body>
+
+</html>

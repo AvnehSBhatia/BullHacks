@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz — Gravitas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-page="quiz">
+  <div class="quiz-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2 small"></div>
+  </div>
+  <div class="quiz-container">
+    <div class="quiz-header">
+      <a href="/" class="back-btn">← Back</a>
+      <div class="quiz-progress-wrap">
+        <div class="progress-label">
+          <span id="quiz-q-num">Question 1</span>
+          <span id="quiz-q-total">of 10</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <div class="progress-section-label" id="progress-section-label">Core Questions</div>
+      </div>
+    </div>
+
+    <div class="quiz-body">
+      <div class="question-card" id="question-card">
+        <div class="q-category" id="q-category">Core</div>
+        <h2 class="q-text" id="q-text">Loading question...</h2>
+        <div class="q-options" id="q-options"></div>
+        <div class="q-slider-wrap hidden" id="q-slider-wrap">
+          <input type="range" class="q-slider" id="q-slider" min="0" max="100" value="50" />
+          <div class="slider-labels">
+            <span id="slider-label-left">Strongly Disagree</span>
+            <span id="slider-label-right">Strongly Agree</span>
+          </div>
+          <div class="slider-value-display" id="slider-value-display">50</div>
+        </div>
+      </div>
+      <div class="quiz-cta-area">
+        <button class="btn-primary" id="quiz-next-btn" disabled>
+          <span id="quiz-next-label">Next →</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <button id="theme-toggle" class="theme-toggle" title="Toggle Dark Mode">🌙</button>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Match — Gravitas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-page="match">
+  <div class="quiz-bg">
+    <div class="orb orb-3 small"></div>
+  </div>
+  <div class="detail-container">
+    <div class="detail-header">
+      <a href="/matches" class="back-btn">← Back</a>
+      <h2 class="detail-title">Plan a Meetup</h2>
+    </div>
+
+    <div class="detail-profile-card" id="detail-profile-card">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="meetup-planner">
+      <h3 class="planner-title">Suggested Hangout</h3>
+      <div class="planner-ai-badge">✨ AI Generated</div>
+      <div class="planner-fields">
+        <div class="planner-field">
+          <label class="planner-label">📍 Location</label>
+          <div class="planner-value" id="plan-location">Verve Coffee Roasters, SF</div>
+        </div>
+        <div class="planner-field">
+          <label class="planner-label">🕑 Time</label>
+          <div class="planner-value" id="plan-time">Saturday, 2–4 PM</div>
+        </div>
+        <div class="planner-field">
+          <label class="planner-label">🎯 Activity</label>
+          <div class="planner-value" id="plan-activity">Casual conversation + board games</div>
+        </div>
+      </div>
+      <button class="btn-ghost-sm" id="regen-plan-btn">↻ Regenerate plan</button>
+    </div>
+
+    <div class="meetup-actions">
+      <button class="btn-primary" id="send-invite-btn">Send Meetup Invite</button>
+      <a href="/report" class="btn-danger-ghost" id="report-btn">⚑ Report User</a>
+    </div>
+  </div>
+
+  <button id="theme-toggle" class="theme-toggle" title="Toggle Dark Mode">🌙</button>
+  <script src="app.js"></script>
+</body>
+
+</html>

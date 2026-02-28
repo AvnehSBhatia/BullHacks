@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Report — Gravitas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-page="report">
+  <div class="quiz-bg"></div>
+  <div class="report-container">
+    <div class="report-header">
+      <a href="/matches" class="back-btn" id="report-back-btn">← Back</a>
+      <h2 class="report-title">Report a User</h2>
+      <p class="report-sub">Reports affect public standing. Abusive filing lowers yours.</p>
+    </div>
+    <div class="report-target" id="report-target-card"></div>
+    <div class="report-form">
+      <label class="form-label">What happened?</label>
+      <div class="report-reasons" id="report-reasons"></div>
+      <label class="form-label" style="margin-top:1.5rem;">Describe the situation</label>
+      <textarea class="form-textarea" id="report-description"
+        placeholder="Describe what happened in detail..."></textarea>
+      <div class="standing-warning">
+        <div class="sw-icon">⚠</div>
+        <div class="sw-text">False reports reduce your <strong>Public Standing</strong> score, making your profile
+          shown to fewer people.</div>
+      </div>
+    </div>
+    <button class="btn-danger" id="submit-report-btn">Submit Report</button>
+  </div>
+
+  <button id="theme-toggle" class="theme-toggle" title="Toggle Dark Mode">🌙</button>
+  <script src="app.js"></script>
+</body>
+
+</html>

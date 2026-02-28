@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat — Gravitas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-page="chat">
+  <div class="chat-container">
+    <div class="chat-header">
+      <a href="/inbox" class="back-btn">← Back</a>
+      <div class="chat-header-info">
+        <div class="chat-avatar" id="chat-avatar">🌊</div>
+        <div>
+          <div class="chat-name" id="chat-name">USR-XXXXXX</div>
+          <div class="chat-status">Connected · Anonymous</div>
+        </div>
+      </div>
+      <a href="/report" class="btn-danger-ghost" style="width:auto;padding:0.45rem 1rem;font-size:0.8rem;"
+        id="chat-report-btn">⚑ Report</a>
+    </div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <div class="chat-input-bar">
+      <textarea class="chat-input" id="chat-input" rows="1" placeholder="Send a message…"></textarea>
+      <button class="chat-send-btn" id="chat-send-btn">↑</button>
+    </div>
+  </div>
+
+  <button id="theme-toggle" class="theme-toggle" title="Toggle Dark Mode">🌙</button>
+  <script src="app.js"></script>
+</body>
+
+</html>

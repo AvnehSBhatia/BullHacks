@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inbox — Gravitas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-page="inbox">
+  <div class="quiz-bg">
+    <div class="orb orb-1 small"></div>
+  </div>
+  <div class="inbox-container">
+    <div class="inbox-header">
+      <a href="/" class="back-btn">← Back</a>
+      <h2 class="inbox-title">Messages</h2>
+    </div>
+    <div class="inbox-tabs">
+      <button class="inbox-tab active" id="itab-connections">Connections <span class="tab-count"
+          id="count-connections">0</span></button>
+      <button class="inbox-tab" id="itab-pending">Pending <span class="tab-count pending"
+          id="count-pending">0</span></button>
+    </div>
+    <div id="inbox-connections-list"></div>
+    <div id="inbox-pending-list" class="hidden"></div>
+    <div class="inbox-empty hidden" id="inbox-empty">
+      <div class="inbox-empty-icon">💬</div>
+      <p>No messages yet. Connect with a match to start chatting!</p>
+    </div>
+  </div>
+
+  <button id="theme-toggle" class="theme-toggle" title="Toggle Dark Mode">🌙</button>
+  <script src="app.js"></script>
+</body>
+
+</html>

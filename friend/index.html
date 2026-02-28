@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gravitas — Find Your People</title>
+  <meta name="description"
+    content="Gravitas connects you with nearby people based on real personality compatibility. Take the quiz, get matched, plan meetups." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-page="landing" class="landing-page">
+  <div class="landing-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <canvas id="particle-canvas"></canvas>
+  </div>
+  <nav class="nav">
+    <a href="/" class="nav-logo">
+      <span class="logo-icon">⚛</span>
+      <span class="logo-text">Gravitas</span>
+    </a>
+    <a href="/inbox" class="nav-msg-btn">
+      💬 Messages
+      <span class="nav-badge" id="nav-badge">0</span>
+    </a>
+  </nav>
+  <div class="landing-content">
+    <div class="landing-badge">
+      <span class="badge-dot"></span>
+      Real Personality Science
+    </div>
+    <h1 class="landing-title">
+      Find people who <br />
+      <span class="gradient-text">actually get you</span>
+    </h1>
+    <p class="landing-sub">
+      Answer 10 questions. We compute your personality vector. <br />
+      Then map you to real humans nearby who match.
+    </p>
+    <div class="landing-actions">
+      <a href="/quiz" class="btn-primary">
+        <span>Take the Quiz</span>
+        <span class="btn-arrow">→</span>
+      </a>
+      <a href="/map" class="btn-secondary">Explore Gravity Map</a>
+    </div>
+    <div class="landing-stats">
+      <div class="stat">
+        <span class="stat-num" id="stat-profiles">0</span>
+        <span class="stat-label">Profiles near you</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">94%</span>
+        <span class="stat-label">Match accuracy</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">cos∿</span>
+        <span class="stat-label">Similarity engine</span>
+      </div>
+    </div>
+  </div>
+  <div class="landing-visual">
+    <div class="gravity-preview">
+      <div class="gp-center">You</div>
+      <div class="gp-orbit orbit-1"></div>
+      <div class="gp-orbit orbit-2"></div>
+      <div class="gp-orbit orbit-3"></div>
+      <div class="gp-node" style="--a:20deg;--d:120px;--c:#818cf8" data-score="97%"></div>
+      <div class="gp-node" style="--a:80deg;--d:100px;--c:#34d399" data-score="89%"></div>
+      <div class="gp-node" style="--a:150deg;--d:140px;--c:#f472b6" data-score="82%"></div>
+      <div class="gp-node" style="--a:220deg;--d:110px;--c:#fb923c" data-score="74%"></div>
+      <div class="gp-node" style="--a:310deg;--d:130px;--c:#60a5fa" data-score="68%"></div>
+    </div>
+  </div>
+
+  <button id="theme-toggle" class="theme-toggle" title="Toggle Dark Mode">🌙</button>
+  <script src="app.js"></script>
+</body>
+
+</html>
