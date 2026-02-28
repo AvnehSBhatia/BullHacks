@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bridge-cream: #FDFAF5;
+  --color-bridge-slate: #1E293B;
+  --color-bridge-red: #C0392B;
+  --color-bridge-blue: #2E86AB;
+  --color-bridge-gold: #F4A839;
+
+  --font-inter: var(--font-inter);
+  --font-fraunces: var(--font-fraunces);
+}
+
+:root {
+  --background: var(--color-bridge-cream);
+  --foreground: var(--color-bridge-slate);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

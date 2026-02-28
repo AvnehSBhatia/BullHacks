@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile — Depolarizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-page="profile">
+  <div class="quiz-bg">
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="profile-container">
+    <div class="profile-header">
+      <div class="profile-avatar-wrap">
+        <div class="profile-avatar" id="profile-avatar">
+          <span id="avatar-emoji">⚖</span>
+        </div>
+        <div class="avatar-ring"></div>
+      </div>
+      <h2 class="profile-title">Your Anonymous Profile</h2>
+      <p class="profile-sub">No real name needed. Your ID keeps you private.</p>
+    </div>
+    <div class="profile-id-wrap">
+      <span class="profile-id-label">Your ID</span>
+      <span class="profile-id" id="profile-id"></span>
+      <button class="copy-btn" id="copy-id-btn" title="Copy ID">📋</button>
+    </div>
+    <div class="profile-stance-badge" id="profile-stance-badge"></div>
+    <div class="profile-form">
+      <label class="form-label">Your city (for matching)</label>
+      <input type="text" class="form-input" id="city-input" placeholder="e.g. San Francisco" />
+      <button class="btn-geo" id="geo-btn">
+        <span>📍</span> Auto-detect location
+      </button>
+    </div>
+    <button class="btn-primary wide" id="find-matches-btn">Find My Matches →</button>
+    <p class="profile-hint">Matches: 75%+ similar, different political stance</p>
+  </div>
+
+  <button id="theme-toggle" class="theme-toggle" title="Toggle Dark Mode">🌙</button>
+  <script src="app.js"></script>
+</body>
+
+</html>

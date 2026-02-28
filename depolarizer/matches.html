@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matches — Depolarizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-page="matches">
+  <div class="quiz-bg">
+    <div class="orb orb-1 small"></div>
+    <div class="orb orb-2"></div>
+  </div>
+  <div class="matches-container">
+    <div class="matches-header">
+      <a href="/profile" class="back-btn">← Back</a>
+      <h2 class="matches-title">Your Depolarizer Matches</h2>
+      <p class="matches-sub">75%+ similar • Different political stance</p>
+    </div>
+    <div class="matches-list" id="matches-list"></div>
+    <div class="matches-empty hidden" id="matches-empty">
+      <p>No matches yet. We only show people 75%+ similar with a different political stance.</p>
+      <p class="matches-empty-hint">Share the quiz with friends who think differently!</p>
+    </div>
+  </div>
+
+  <button id="theme-toggle" class="theme-toggle" title="Toggle Dark Mode">🌙</button>
+  <script src="app.js"></script>
+</body>
+
+</html>

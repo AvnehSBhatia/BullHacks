@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Depolarizer — Bridge the Divide</title>
+  <meta name="description"
+    content="Connect with people who think like you but identify differently. Answer political questions, get matched with someone 75%+ similar who has different views." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-page="landing" class="landing-page">
+  <div class="landing-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <canvas id="particle-canvas"></canvas>
+  </div>
+  <nav class="nav">
+    <a href="/" class="nav-logo">
+      <span class="logo-icon">⚖</span>
+      <span class="logo-text">Depolarizer</span>
+    </a>
+  </nav>
+  <div class="landing-content">
+    <div class="landing-badge">
+      <span class="badge-dot"></span>
+      Bridge the Divide
+    </div>
+    <h1 class="landing-title">
+      Meet someone who <br />
+      <span class="gradient-text">thinks like you</span> — but votes differently
+    </h1>
+    <p class="landing-sub">
+      Answer 10 political questions + your stance. We match you with people 75%+ similar
+      <br />who have a different political identity. Real conversation across divides.
+    </p>
+    <div class="landing-actions">
+      <a href="/quiz" class="btn-primary">
+        <span>Take the Quiz</span>
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
+    <div class="landing-stats">
+      <div class="stat">
+        <span class="stat-num" id="stat-profiles">0</span>
+        <span class="stat-label">Profiles ready</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">75%+</span>
+        <span class="stat-label">Similarity threshold</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">Q11</span>
+        <span class="stat-label">Stance MCQ</span>
+      </div>
+    </div>
+  </div>
+
+  <button id="theme-toggle" class="theme-toggle" title="Toggle Dark Mode">🌙</button>
+  <script src="app.js"></script>
+</body>
+
+</html>
