@@ -22,7 +22,7 @@ from flask import Flask, jsonify, request, send_from_directory
 
 from gravity_map import GravityLayoutConfig, compute_gravity_layout
 from response_modify import to_matrix
-from train import load_checkpoint, get_device
+from train import load_checkpoint, get_device, build_user_profile
 
 app = Flask(__name__, static_folder=".", static_url_path="")
 
@@ -114,6 +114,46 @@ def _generate_user_id() -> str:
     return "USR-" + "".join(random.choices(string.ascii_uppercase + string.digits, k=6))
 
 
+def _generate_fake_profiles(n: int = 20) -> int:
+    """
+    Generate n synthetic (fake) profiles using personality_answers.json and niche Q/A.
+    Inserts into users and responses tables with id prefix "BOT-".
+    Returns the number of profiles actually inserted.
+    """
+    if n <= 0 or len(_niche_pool) < 5:
+        return 0
+    path = os.path.join(_here, "personality_answers.json")
+    if not os.path.exists(path):
+        return 0
+    with open(path) as f:
+        personality = json.load(f)
+    responses = personality.get("responses", [])
+    if not responses:
+        return 0
+    rng = random.Random(42)
+    inserted = 0
+    conn = get_db()
+    try:
+        for _ in range(n):
+            entry = rng.choice(responses)
+            questions, answers = build_user_profile(entry, _niche_pool, rng)
+            vec = _embed(questions, answers)
+            bot_id = "BOT-" + "".join(random.choices(string.ascii_uppercase + string.digits, k=6))
+            conn.execute(
+                "INSERT INTO users (id, vector, city, interests, standing) VALUES (?, ?, ?, ?, ?)",
+                (bot_id, json.dumps(vec), "", "[]", rng.randint(75, 98)),
+            )
+            conn.execute(
+                "INSERT INTO responses (user_id, questions, answers) VALUES (?, ?, ?)",
+                (bot_id, json.dumps(questions), json.dumps(answers)),
+            )
+            inserted += 1
+        conn.commit()
+    finally:
+        conn.close()
+    return inserted
+
+
 def _load_users_from_db() -> list[dict]:
     conn = get_db()
     cur = conn.execute(
@@ -203,8 +243,41 @@ def map_layout():
     center_id = data["center_id"]
     matches = data["matches"]
 
+    # Build node list
     nodes = [center_id] + [m["id"] for m in matches]
-    edges = [(center_id, m["id"], max(0.1, float(m.get("matchScore", 50)))) for m in matches]
+
+    # Base star edges: center → each match, using frontend matchScore
+    edges = [
+        (center_id, m["id"], max(0.1, float(m.get("matchScore", 50))))
+        for m in matches
+    ]
+
+    # Enrich graph: add edges between matches using cosine similarity of
+    # their stored 64‑d vectors (which were produced by compression_model.pt).
+    # This gives the gravity map more structure than a simple star.
+    try:
+        db_users = {u["id"]: u for u in _load_users_from_db()}
+        for i in range(len(matches)):
+            for j in range(i + 1, len(matches)):
+                uid_i = matches[i]["id"]
+                uid_j = matches[j]["id"]
+                ui = db_users.get(uid_i)
+                uj = db_users.get(uid_j)
+                if not ui or not uj:
+                    continue
+                vec_i = ui.get("vector")
+                vec_j = uj.get("vector")
+                if not vec_i or not vec_j:
+                    continue
+                raw_sim = _cosine_sim(vec_i, vec_j)
+                score_pct = ((raw_sim + 1.0) / 2.0) * 100.0
+                # Skip very weak links to avoid clutter.
+                if score_pct < 40.0:
+                    continue
+                edges.append((uid_i, uid_j, score_pct))
+    except Exception:
+        # If anything goes wrong (e.g. DB issue), fall back to star-only graph.
+        pass
 
     if not edges:
         positions = {center_id: (0.0, 0.0)}
@@ -217,7 +290,7 @@ def map_layout():
         positions = compute_gravity_layout(nodes, edges, center_id, config=config)
 
     pos_dict = {str(k): [float(v[0]), float(v[1])] for k, v in positions.items()}
-    edge_list = [[center_id, m["id"], float(m.get("matchScore", 50))] for m in matches]
+    edge_list = [[str(u), str(v), float(w)] for (u, v, w) in edges]
     return jsonify({"positions": pos_dict, "edges": edge_list})
 
 
@@ -227,6 +300,15 @@ def health():
     count = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
     conn.close()
     return jsonify({"ok": True, "db_size": count})
+
+
+@app.route("/api/seed-fake-profiles", methods=["GET", "POST"])
+def seed_fake_profiles():
+    """Generate synthetic (fake) profiles. Query: n=20 (optional, default 20)."""
+    n = request.args.get("n", 20, type=int)
+    n = max(0, min(100, n))
+    added = _generate_fake_profiles(n)
+    return jsonify({"ok": True, "added": added})
 
 
 @app.route("/api/questions", methods=["GET"])
@@ -401,6 +483,15 @@ if __name__ == "__main__":
     _load_niche_pool()
     print("Initializing database...")
     init_db()
+    # Seed fake profiles if DB has very few users (so new users see matches)
+    conn = get_db()
+    count = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
+    conn.close()
+    if count < 5:
+        n = 20
+        added = _generate_fake_profiles(n)
+        if added:
+            print(f"Seeded {added} fake profiles (BOT-*) for demo matches.")
     port = int(os.environ.get("PORT", 5001))
     print(f"Ready. Open http://127.0.0.1:{port}")
     app.run(host="0.0.0.0", port=port, debug=True)

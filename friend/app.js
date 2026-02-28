@@ -435,8 +435,12 @@ function initMap() {
   let mapLayout = { positions: {}, edges: [] };
   let mapNodes = [];
   let mapOffset = { x: 0, y: 0 };
+  let mapZoom = 1;
+  const MAP_ZOOM_MIN = 0.4;
+  const MAP_ZOOM_MAX = 3;
   let isDragging = false;
   let startDrag = { x: 0, y: 0 };
+  let mouseDownPos = null;
   let animId = null;
 
   function resizeMap() {
@@ -451,10 +455,40 @@ function initMap() {
   async function initGravityMap() {
     mapCtx = canvas.getContext('2d');
     resizeMap();
+    requestAnimationFrame(() => resizeMap());
     window.addEventListener('resize', resizeMap);
-    canvas.addEventListener('mousedown', e => { isDragging = true; startDrag = { x: e.clientX - mapOffset.x, y: e.clientY - mapOffset.y }; });
+    canvas.addEventListener('mousedown', e => {
+      isDragging = true;
+      startDrag = { x: e.clientX - mapOffset.x, y: e.clientY - mapOffset.y };
+      mouseDownPos = { x: e.offsetX, y: e.offsetY };
+    });
     canvas.addEventListener('mousemove', e => { if (isDragging) { mapOffset.x = e.clientX - startDrag.x; mapOffset.y = e.clientY - startDrag.y; } });
-    window.addEventListener('mouseup', () => isDragging = false);
+    window.addEventListener('mouseup', () => { isDragging = false; });
+    canvas.addEventListener('click', e => {
+      if (!mouseDownPos || mapNodes.length === 0) return;
+      const dx = e.offsetX - mouseDownPos.x, dy = e.offsetY - mouseDownPos.y;
+      if (dx * dx + dy * dy > 36) return;
+      const cw = canvas.width, ch = canvas.height;
+      const cx = cw / 2 + mapOffset.x, cy = ch / 2 + mapOffset.y;
+      const scale = Math.min(cw, ch) * 0.35 * mapZoom;
+      const pos = mapLayout.positions;
+      for (const n of mapNodes) {
+        if (n.id === centerId) continue;
+        const p = pos[n.id];
+        if (!p) continue;
+        const [nx, ny] = layoutToCanvas(p[0], p[1], cw, ch, cx, cy, scale);
+        const distSq = (e.offsetX - nx) ** 2 + (e.offsetY - ny) ** 2;
+        if (distSq <= n.r * n.r) {
+          window.location.href = `/match?user_id=${encodeURIComponent(n.id)}`;
+          return;
+        }
+      }
+    });
+    canvas.addEventListener('wheel', e => {
+      e.preventDefault();
+      const delta = e.deltaY > 0 ? -0.12 : 0.12;
+      mapZoom = Math.max(MAP_ZOOM_MIN, Math.min(MAP_ZOOM_MAX, mapZoom + delta));
+    }, { passive: false });
 
     const centerId = state.user.id || 'center';
     const matches = state.db.map(u => ({ id: u.id, matchScore: u.matchScore ?? 50, standing: u.standing ?? 80 }));
@@ -498,8 +532,10 @@ function initMap() {
       const ch = canvas.height;
       const cx = cw / 2 + mapOffset.x;
       const cy = ch / 2 + mapOffset.y;
-      const scale = Math.min(cw, ch) * 0.35;
+      const scale = Math.min(cw, ch) * 0.35 * mapZoom;
       mapCtx.clearRect(0, 0, cw, ch);
+      mapCtx.fillStyle = 'var(--bg-card)';
+      mapCtx.fillRect(0, 0, cw, ch);
 
       const pos = mapLayout.positions;
 
@@ -518,6 +554,7 @@ function initMap() {
       const [ccx, ccy] = centerPos ? layoutToCanvas(centerPos[0], centerPos[1], cw, ch, cx, cy, scale) : [cx, cy];
 
       const drawConns = document.getElementById('ctrl-connections')?.classList.contains('active');
+      const drawWeights = document.getElementById('ctrl-weight')?.classList.contains('active');
       if (drawConns !== false) {
         mapLayout.edges.forEach(([u, v, weight]) => {
           const pu = pos[u];
@@ -525,12 +562,28 @@ function initMap() {
           if (!pu || !pv) return;
           const [x1, y1] = layoutToCanvas(pu[0], pu[1], cw, ch, cx, cy, scale);
           const [x2, y2] = layoutToCanvas(pv[0], pv[1], cw, ch, cx, cy, scale);
+          const isCenterEdge = u === centerId || v === centerId;
+          const opacity = isCenterEdge ? (weight > 80 ? 0.45 : weight > 60 ? 0.3 : 0.2) : (weight > 80 ? 0.2 : weight > 60 ? 0.14 : 0.1);
           mapCtx.beginPath();
           mapCtx.moveTo(x1, y1);
           mapCtx.lineTo(x2, y2);
-          mapCtx.strokeStyle = weight > 80 ? 'rgba(129,140,248,0.45)' : weight > 60 ? 'rgba(52,211,153,0.3)' : 'rgba(251,146,60,0.2)';
-          mapCtx.lineWidth = weight > 80 ? 2 : 1;
+          mapCtx.strokeStyle = weight > 80 ? `rgba(129,140,248,${opacity})` : weight > 60 ? `rgba(52,211,153,${opacity})` : `rgba(251,146,60,${opacity})`;
+          mapCtx.lineWidth = isCenterEdge ? (weight > 80 ? 3.5 : 2.5) : (weight > 80 ? 2 : 1);
           mapCtx.stroke();
+          if (drawWeights && (u === centerId || v === centerId)) {
+            const midX = (x1 + x2) / 2;
+            const midY = (y1 + y2) / 2;
+            const label = Math.round(weight) + '%';
+            const labelColor = weight > 80 ? '#818cf8' : weight > 60 ? '#34d399' : '#fb923c';
+            mapCtx.font = '11px Inter';
+            mapCtx.textAlign = 'center';
+            mapCtx.textBaseline = 'middle';
+            mapCtx.fillStyle = labelColor;
+            mapCtx.strokeStyle = 'var(--bg-card)';
+            mapCtx.lineWidth = 3;
+            mapCtx.strokeText(label, midX, midY);
+            mapCtx.fillText(label, midX, midY);
+          }
         });
       }
 
@@ -557,8 +610,19 @@ function initMatch() {
   loadStateFromStorage();
   initThemeToggle();
 
-  const activeMatchJson = localStorage.getItem(STORAGE_KEYS.ACTIVE_MATCH);
-  const activeMatch = activeMatchJson ? JSON.parse(activeMatchJson) : null;
+  const params = new URLSearchParams(window.location.search);
+  const userIdFromUrl = params.get('user_id');
+  let activeMatch = null;
+  if (userIdFromUrl) {
+    activeMatch = state.db.find(m => m.id === userIdFromUrl) || null;
+    if (activeMatch) {
+      localStorage.setItem(STORAGE_KEYS.ACTIVE_MATCH, JSON.stringify(activeMatch));
+    }
+  }
+  if (!activeMatch) {
+    const activeMatchJson = localStorage.getItem(STORAGE_KEYS.ACTIVE_MATCH);
+    activeMatch = activeMatchJson ? JSON.parse(activeMatchJson) : null;
+  }
   if (!activeMatch) {
     window.location.href = '/matches';
     return;

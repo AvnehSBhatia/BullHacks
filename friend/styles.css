@@ -17,6 +17,8 @@
   --bg: #f8fafc;
   --bg-card: rgba(0, 0, 0, 0.03);
   --bg-card-hover: rgba(0, 0, 0, 0.06);
+  --map-panel-bg: rgba(255, 255, 255, 0.88);
+  --map-control-bg: rgba(15, 23, 42, 0.04);
   --border: rgba(0, 0, 0, 0.1);
   --border-hover: rgba(0, 0, 0, 0.2);
   --text: #0f172a;
@@ -39,6 +41,8 @@ body.dark-mode {
   --bg: #080b14;
   --bg-card: rgba(255, 255, 255, 0.04);
   --bg-card-hover: rgba(255, 255, 255, 0.07);
+  --map-panel-bg: rgba(8, 11, 20, 0.82);
+  --map-control-bg: rgba(255, 255, 255, 0.04);
   --border: rgba(255, 255, 255, 0.08);
   --border-hover: rgba(255, 255, 255, 0.18);
   --text: #f0f4ff;
@@ -392,6 +396,12 @@ body.dark-mode .auth-input:focus {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 /* --- Buttons ---------------------------------------------- */
@@ -1089,18 +1099,27 @@ body.dark-mode .q-textarea:focus {
 }
 
 /* --- Profile ---------------------------------------------- */
+body[data-page="profile"] {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .profile-container {
   position: relative;
   z-index: 10;
   max-width: 540px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 4rem;
+  padding: 1.25rem 1.5rem 2rem;
   width: 100%;
+}
+
+.profile-topbar {
+  margin-bottom: 0.75rem;
 }
 
 .profile-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .profile-avatar-wrap {
@@ -1157,7 +1176,7 @@ body.dark-mode .q-textarea:focus {
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   padding: 0.8rem 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .profile-id-label {
@@ -1194,7 +1213,7 @@ body.dark-mode .q-textarea:focus {
 
 /* Vector Bars */
 .personality-vector-wrap {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .vector-title {
@@ -1249,7 +1268,7 @@ body.dark-mode .q-textarea:focus {
 
 /* Profile Form */
 .profile-form {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .form-label {
@@ -1349,7 +1368,7 @@ body.dark-mode .q-textarea:focus {
   align-items: center;
   gap: 1rem;
   padding: 1.2rem 1.5rem;
-  background: rgba(8, 11, 20, 0.8);
+  background: var(--map-panel-bg);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
   z-index: 20;
@@ -1369,7 +1388,7 @@ body.dark-mode .q-textarea:focus {
 }
 
 .map-ctrl-btn {
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--map-control-bg);
   border: 1px solid var(--border);
   border-radius: 50px;
   padding: 0.4rem 1rem;
@@ -1388,8 +1407,10 @@ body.dark-mode .q-textarea:focus {
 
 #gravity-canvas {
   flex: 1;
+  min-height: 280px;
+  width: 100%;
   display: block;
-  background: transparent;
+  background: var(--bg-card);
   cursor: grab;
 }
 
@@ -1404,7 +1425,7 @@ body.dark-mode .q-textarea:focus {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background: rgba(8, 11, 20, 0.8);
+  background: var(--map-panel-bg);
   backdrop-filter: blur(20px);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
@@ -1432,7 +1453,7 @@ body.dark-mode .q-textarea:focus {
   transform: translateX(-50%);
   display: flex;
   gap: 2rem;
-  background: rgba(8, 11, 20, 0.85);
+  background: var(--map-panel-bg);
   backdrop-filter: blur(20px);
   border: 1px solid var(--border);
   border-radius: 50px;
