@@ -1,0 +1,2725 @@
+{
+  "total": 544,
+  "qa_pairs": [
+    {
+      "id": 0,
+      "question": "What's your favorite way to spend a Saturday?",
+      "answer": "I love sleeping in, grabbing brunch, and then spending the afternoon exploring a bookstore or park."
+    },
+    {
+      "id": 1,
+      "question": "What type of music do you listen to most?",
+      "answer": "I'm all over the place but I keep coming back to indie rock and lo-fi hip hop."
+    },
+    {
+      "id": 2,
+      "question": "Do you prefer cities or nature?",
+      "answer": "Nature for peace of mind, but cities for the energy and food scene."
+    },
+    {
+      "id": 3,
+      "question": "What's your go-to comfort food?",
+      "answer": "Mac and cheese with truffle oil, it's simple but it hits every time."
+    },
+    {
+      "id": 4,
+      "question": "Are you a morning person or a night owl?",
+      "answer": "Night owl for sure, my brain doesn't start working until after 10pm."
+    },
+    {
+      "id": 5,
+      "question": "What's the last movie you really enjoyed?",
+      "answer": "I rewatched Interstellar last week and it hit even harder the second time."
+    },
+    {
+      "id": 6,
+      "question": "Do you prefer reading or watching content?",
+      "answer": "Reading for depth, watching for when my brain needs a break."
+    },
+    {
+      "id": 7,
+      "question": "What's your favorite season and why?",
+      "answer": "Autumn because the air is crisp, the colors are beautiful, and everything feels like a fresh start."
+    },
+    {
+      "id": 8,
+      "question": "Coffee or tea?",
+      "answer": "Coffee in the morning for function, tea at night for ritual."
+    },
+    {
+      "id": 9,
+      "question": "What's a hobby you picked up recently?",
+      "answer": "I started bouldering two months ago and I'm completely hooked."
+    },
+    {
+      "id": 10,
+      "question": "What kind of books do you gravitate toward?",
+      "answer": "Science fiction and philosophy, anything that makes me question reality."
+    },
+    {
+      "id": 11,
+      "question": "Do you enjoy cooking or eating out more?",
+      "answer": "Cooking because I love the creative process, but eating out for the social experience."
+    },
+    {
+      "id": 12,
+      "question": "What's your favorite type of weather?",
+      "answer": "Overcast with a light breeze, perfect for walking and thinking."
+    },
+    {
+      "id": 13,
+      "question": "Do you play any sports?",
+      "answer": "I play pickup basketball twice a week and swim on weekends."
+    },
+    {
+      "id": 14,
+      "question": "What's a TV show you'd recommend to anyone?",
+      "answer": "Breaking Bad, because the character development is unmatched in television."
+    },
+    {
+      "id": 15,
+      "question": "Are you into podcasts?",
+      "answer": "Obsessively, I listen to at least two hours of podcasts daily on everything from history to tech."
+    },
+    {
+      "id": 16,
+      "question": "What's your ideal vacation?",
+      "answer": "A cabin in the mountains with no cell service, a stack of books, and a fireplace."
+    },
+    {
+      "id": 17,
+      "question": "Do you play any instruments?",
+      "answer": "I play acoustic guitar and I'm teaching myself piano through YouTube."
+    },
+    {
+      "id": 18,
+      "question": "What's your favorite cuisine?",
+      "answer": "Japanese, the attention to detail and balance of flavors is unreal."
+    },
+    {
+      "id": 19,
+      "question": "How do you feel about social media?",
+      "answer": "I think it's a tool that amplifies whatever you already are, good or bad."
+    },
+    {
+      "id": 20,
+      "question": "What's your favorite animal?",
+      "answer": "Dogs, specifically golden retrievers because they radiate pure joy."
+    },
+    {
+      "id": 21,
+      "question": "Do you prefer sweet or savory?",
+      "answer": "Savory all day, I'd take a cheese plate over cake any time."
+    },
+    {
+      "id": 22,
+      "question": "What's a skill you wish you had?",
+      "answer": "I wish I could draw well enough to sketch the things I imagine."
+    },
+    {
+      "id": 23,
+      "question": "What's your love language?",
+      "answer": "Quality time, nothing beats undivided attention from someone you care about."
+    },
+    {
+      "id": 24,
+      "question": "Do you prefer phone calls or texting?",
+      "answer": "Texting for logistics, but I prefer voice calls for real conversations."
+    },
+    {
+      "id": 25,
+      "question": "What's the best concert you've been to?",
+      "answer": "Radiohead in an outdoor amphitheater during a light rain, absolutely transcendent."
+    },
+    {
+      "id": 26,
+      "question": "Are you a planner or spontaneous?",
+      "answer": "Planner by nature but I've learned to leave room for spontaneity."
+    },
+    {
+      "id": 27,
+      "question": "What's your favorite board game?",
+      "answer": "Settlers of Catan because it's the perfect mix of strategy and social dynamics."
+    },
+    {
+      "id": 28,
+      "question": "How important is fitness to you?",
+      "answer": "Very, it's less about aesthetics and more about mental health and discipline."
+    },
+    {
+      "id": 29,
+      "question": "What's a place you've always wanted to visit?",
+      "answer": "Kyoto during cherry blossom season, it looks like a painting come to life."
+    },
+    {
+      "id": 30,
+      "question": "Do you have a favorite quote?",
+      "answer": "The obstacle is the way by Marcus Aurelius, it reframes every challenge."
+    },
+    {
+      "id": 31,
+      "question": "What's your opinion on astrology?",
+      "answer": "I don't take it seriously but I think it's a fun framework for self-reflection."
+    },
+    {
+      "id": 32,
+      "question": "Are you competitive?",
+      "answer": "Extremely, even in things that don't matter like board games and trivia."
+    },
+    {
+      "id": 33,
+      "question": "What's your relationship with money?",
+      "answer": "I see it as a tool for freedom, not a scorecard."
+    },
+    {
+      "id": 34,
+      "question": "How do you feel about pets?",
+      "answer": "I think everyone should have a pet at some point, they teach you unconditional love."
+    },
+    {
+      "id": 35,
+      "question": "What's a food you could eat every day?",
+      "answer": "Rice, it goes with literally everything and I never get tired of it."
+    },
+    {
+      "id": 36,
+      "question": "Do you enjoy art museums?",
+      "answer": "Yes, especially modern art because I love arguing about what counts as art."
+    },
+    {
+      "id": 37,
+      "question": "What kind of humor do you have?",
+      "answer": "Dry and self-deprecating with occasional absurdist humor."
+    },
+    {
+      "id": 38,
+      "question": "What's your favorite holiday?",
+      "answer": "Thanksgiving because it's all about food, gratitude, and no gift pressure."
+    },
+    {
+      "id": 39,
+      "question": "Do you prefer routine or variety?",
+      "answer": "Routine for weekdays, variety for weekends, that balance keeps me sane."
+    },
+    {
+      "id": 40,
+      "question": "What's your favorite programming language?",
+      "answer": "Python because it reads like pseudocode and the ecosystem is massive."
+    },
+    {
+      "id": 41,
+      "question": "Do you enjoy DIY projects?",
+      "answer": "I built my own desk last year and now I want to build everything from scratch."
+    },
+    {
+      "id": 42,
+      "question": "What's your take on AI?",
+      "answer": "It's the most transformative technology of our generation and we're barely scratching the surface."
+    },
+    {
+      "id": 43,
+      "question": "Do you invest in stocks or crypto?",
+      "answer": "Index funds for stability and a small crypto allocation for the thrill."
+    },
+    {
+      "id": 44,
+      "question": "What's your favorite video game of all time?",
+      "answer": "The Legend of Zelda: Breath of the Wild because the open world feels truly free."
+    },
+    {
+      "id": 45,
+      "question": "Do you follow any sports teams?",
+      "answer": "I follow the Lakers and watch every game like my life depends on it."
+    },
+    {
+      "id": 46,
+      "question": "What's your opinion on remote work?",
+      "answer": "It's the future for knowledge work and I'll never go back to an office full-time."
+    },
+    {
+      "id": 47,
+      "question": "Do you journal regularly?",
+      "answer": "Every night before bed, it's the best habit I've ever built."
+    },
+    {
+      "id": 48,
+      "question": "What documentary changed your perspective?",
+      "answer": "13th by Ava DuVernay completely shifted how I think about systemic issues."
+    },
+    {
+      "id": 49,
+      "question": "How do you feel about public transportation?",
+      "answer": "I love it in cities that do it well, it's meditative and efficient."
+    },
+    {
+      "id": 50,
+      "question": "What's your favorite type of art?",
+      "answer": "Impressionism, there's something beautiful about capturing a feeling rather than a photo."
+    },
+    {
+      "id": 51,
+      "question": "Do you believe in aliens?",
+      "answer": "The math says yes, the universe is too big for us to be alone."
+    },
+    {
+      "id": 52,
+      "question": "What's a conspiracy theory you find interesting?",
+      "answer": "The simulation theory, because it's the one that actual physicists take semi-seriously."
+    },
+    {
+      "id": 53,
+      "question": "How do you feel about minimalism?",
+      "answer": "I love the philosophy but I'm too attached to my book collection to fully commit."
+    },
+    {
+      "id": 54,
+      "question": "What's your stance on climate change?",
+      "answer": "It's the defining crisis of our era and individual action matters but systemic change matters more."
+    },
+    {
+      "id": 55,
+      "question": "Do you believe in soulmates?",
+      "answer": "Not in the predestined sense, but I believe in deep compatibility built through effort."
+    },
+    {
+      "id": 56,
+      "question": "What's a language you'd love to learn?",
+      "answer": "Japanese, because I want to read manga in its original form."
+    },
+    {
+      "id": 57,
+      "question": "What do you think about space exploration?",
+      "answer": "It's essential for the survival of our species and also just incredibly cool."
+    },
+    {
+      "id": 58,
+      "question": "How do you feel about thrift shopping?",
+      "answer": "It's the best way to shop, unique finds and it's sustainable."
+    },
+    {
+      "id": 59,
+      "question": "What's your morning routine?",
+      "answer": "Wake up, cold water on my face, ten minutes of journaling, then coffee and deep work."
+    },
+    {
+      "id": 60,
+      "question": "Do you believe in ghosts?",
+      "answer": "No, but I wouldn't spend a night in a haunted house alone."
+    },
+    {
+      "id": 61,
+      "question": "What's your relationship with religion?",
+      "answer": "I'm spiritual but not religious, I take wisdom from many traditions."
+    },
+    {
+      "id": 62,
+      "question": "How important is travel to you?",
+      "answer": "It's how I learn best, nothing beats being dropped into a foreign culture."
+    },
+    {
+      "id": 63,
+      "question": "What's the weirdest food you've enjoyed?",
+      "answer": "Fried crickets in Thailand, genuinely tasted like salty chips."
+    },
+    {
+      "id": 64,
+      "question": "Do you prefer analog or digital?",
+      "answer": "Digital for work, analog for thinking and note-taking."
+    },
+    {
+      "id": 65,
+      "question": "What's your stance on tattoos?",
+      "answer": "I have three and each one marks a chapter of my life."
+    },
+    {
+      "id": 66,
+      "question": "How do you feel about karaoke?",
+      "answer": "I'm terrible at singing but I'll absolutely own the mic after two drinks."
+    },
+    {
+      "id": 67,
+      "question": "What's your favorite childhood memory?",
+      "answer": "Building forts in the living room with my siblings on rainy days."
+    },
+    {
+      "id": 68,
+      "question": "Do you like roller coasters?",
+      "answer": "I live for that stomach-drop feeling on the first big hill."
+    },
+    {
+      "id": 69,
+      "question": "What's a tradition you value?",
+      "answer": "Sunday dinners with family, no phones, just food and conversation."
+    },
+    {
+      "id": 70,
+      "question": "How do you handle disagreements?",
+      "answer": "I try to understand the other perspective first before defending mine."
+    },
+    {
+      "id": 71,
+      "question": "What's a movie that made you cry?",
+      "answer": "Coco, I didn't expect an animated movie to wreck me like that."
+    },
+    {
+      "id": 72,
+      "question": "Do you prefer fiction or nonfiction?",
+      "answer": "Fiction for empathy, nonfiction for knowledge, I need both."
+    },
+    {
+      "id": 73,
+      "question": "What's your guilty pleasure?",
+      "answer": "Reality TV competitions, specifically cooking shows where people get eliminated."
+    },
+    {
+      "id": 74,
+      "question": "How do you feel about camping?",
+      "answer": "I love it as long as there's a proper sleeping pad and coffee in the morning."
+    },
+    {
+      "id": 75,
+      "question": "What's a hill you'd die on?",
+      "answer": "Pineapple absolutely belongs on pizza and I will not be moved on this."
+    },
+    {
+      "id": 76,
+      "question": "Do you collect anything?",
+      "answer": "Vinyl records, there's something about the ritual of putting a needle on wax."
+    },
+    {
+      "id": 77,
+      "question": "What's your ideal date?",
+      "answer": "A quiet dinner at a cozy restaurant followed by a long walk and real conversation."
+    },
+    {
+      "id": 78,
+      "question": "How do you define success?",
+      "answer": "Having the freedom to spend your time on things that matter to you."
+    },
+    {
+      "id": 79,
+      "question": "What's a trend you don't understand?",
+      "answer": "Short-form video content, I don't understand how people watch 30-second clips for hours."
+    },
+    {
+      "id": 80,
+      "question": "What's your favorite math subject?",
+      "answer": "Linear algebra because everything in ML and graphics boils down to it."
+    },
+    {
+      "id": 81,
+      "question": "Do you have a preferred text editor?",
+      "answer": "Neovim with a custom config I've been tweaking for two years."
+    },
+    {
+      "id": 82,
+      "question": "What's your favorite algorithm?",
+      "answer": "A* search, it's elegant and I use the concept of heuristics constantly in life."
+    },
+    {
+      "id": 83,
+      "question": "How do you feel about functional programming?",
+      "answer": "I love the purity of it but I'm pragmatic enough to mix paradigms."
+    },
+    {
+      "id": 84,
+      "question": "What's your preferred database?",
+      "answer": "PostgreSQL for relational, Redis for caching, that covers 90% of use cases."
+    },
+    {
+      "id": 85,
+      "question": "Do you have a favorite theorem?",
+      "answer": "The central limit theorem, it's wild that randomness converges to order."
+    },
+    {
+      "id": 86,
+      "question": "What's your take on blockchain beyond crypto?",
+      "answer": "Supply chain verification and decentralized identity are genuinely useful applications."
+    },
+    {
+      "id": 87,
+      "question": "How do you feel about Rust vs Go?",
+      "answer": "Rust for when correctness matters, Go for when shipping speed matters."
+    },
+    {
+      "id": 88,
+      "question": "What's your favorite data structure?",
+      "answer": "Hash maps, O(1) average lookup is basically magic."
+    },
+    {
+      "id": 89,
+      "question": "Do you prefer frontend or backend development?",
+      "answer": "Backend because I like building systems more than styling buttons."
+    },
+    {
+      "id": 90,
+      "question": "What's your opinion on microservices?",
+      "answer": "Great for large teams, overkill for small ones, monoliths first."
+    },
+    {
+      "id": 91,
+      "question": "What's the most useful design pattern you know?",
+      "answer": "Observer pattern, it's everywhere from event systems to reactive frameworks."
+    },
+    {
+      "id": 92,
+      "question": "How do you feel about test-driven development?",
+      "answer": "I write tests for critical paths but I'm not dogmatic about TDD for everything."
+    },
+    {
+      "id": 93,
+      "question": "What's your preferred cloud provider?",
+      "answer": "AWS for breadth, but I reach for Vercel and Railway for quick deploys."
+    },
+    {
+      "id": 94,
+      "question": "Do you prefer SQL or NoSQL?",
+      "answer": "SQL for most things, NoSQL only when the data is genuinely unstructured."
+    },
+    {
+      "id": 95,
+      "question": "What's a paper that influenced your thinking?",
+      "answer": "Attention Is All You Need, it changed the entire trajectory of AI."
+    },
+    {
+      "id": 96,
+      "question": "How do you feel about open source?",
+      "answer": "It's the backbone of modern software and I try to contribute when I can."
+    },
+    {
+      "id": 97,
+      "question": "What's your favorite neural network architecture?",
+      "answer": "Transformers, the self-attention mechanism is beautifully general."
+    },
+    {
+      "id": 98,
+      "question": "Do you prefer static or dynamic typing?",
+      "answer": "Static for large codebases, dynamic for prototyping and scripting."
+    },
+    {
+      "id": 99,
+      "question": "What's your take on agile methodology?",
+      "answer": "The principles are solid but most implementations are just meetings in disguise."
+    },
+    {
+      "id": 100,
+      "question": "How do you learn new technologies?",
+      "answer": "Build something with it immediately, documentation only when I get stuck."
+    },
+    {
+      "id": 101,
+      "question": "What's your stance on code comments?",
+      "answer": "Write self-documenting code and only comment the why, never the what."
+    },
+    {
+      "id": 102,
+      "question": "Do you use vim keybindings?",
+      "answer": "Yes, in every editor, my fingers physically refuse to use arrow keys now."
+    },
+    {
+      "id": 103,
+      "question": "What's your favorite API design style?",
+      "answer": "REST for simple CRUD, GraphQL when clients need flexible queries."
+    },
+    {
+      "id": 104,
+      "question": "How do you feel about pair programming?",
+      "answer": "Exhausting but incredibly effective for complex problem-solving."
+    },
+    {
+      "id": 105,
+      "question": "What's a technology you think is overhyped?",
+      "answer": "NFTs for art, the technology has potential but the art market use case was a bubble."
+    },
+    {
+      "id": 106,
+      "question": "Do you have a favorite sorting algorithm?",
+      "answer": "Merge sort, it's elegant, stable, and the divide-and-conquer is satisfying."
+    },
+    {
+      "id": 107,
+      "question": "What's your opinion on monorepos?",
+      "answer": "Love them with the right tooling, Turborepo changed my workflow."
+    },
+    {
+      "id": 108,
+      "question": "How do you feel about CSS?",
+      "answer": "It's a necessary evil that I've grown to appreciate for its power."
+    },
+    {
+      "id": 109,
+      "question": "What's your preferred machine learning framework?",
+      "answer": "PyTorch because the imperative style makes debugging so much easier."
+    },
+    {
+      "id": 110,
+      "question": "What's your favorite physics equation?",
+      "answer": "E=mc\u00b2 for its elegance, but Maxwell's equations for their utility."
+    },
+    {
+      "id": 111,
+      "question": "Do you have a preferred proof technique?",
+      "answer": "Proof by contradiction, there's something satisfying about assuming the opposite and watching it fall apart."
+    },
+    {
+      "id": 112,
+      "question": "What's your favorite chemical element?",
+      "answer": "Carbon, because it's the foundation of all known life and incredibly versatile."
+    },
+    {
+      "id": 113,
+      "question": "How do you feel about Bayesian vs frequentist statistics?",
+      "answer": "Bayesian for real-world reasoning, frequentist for controlled experiments."
+    },
+    {
+      "id": 114,
+      "question": "What's your favorite piano piece?",
+      "answer": "Clair de Lune by Debussy, it sounds like moonlight feels."
+    },
+    {
+      "id": 115,
+      "question": "Do you have a preferred chess opening?",
+      "answer": "The Sicilian Defense, it's aggressive and creates dynamic positions."
+    },
+    {
+      "id": 116,
+      "question": "What's your take on the Fermi Paradox?",
+      "answer": "The Great Filter probably lies ahead of us, which is terrifying and motivating."
+    },
+    {
+      "id": 117,
+      "question": "How do you feel about sourdough bread?",
+      "answer": "I maintained a starter for six months and the bread was transcendent."
+    },
+    {
+      "id": 118,
+      "question": "What's your favorite logical fallacy to spot?",
+      "answer": "Survivorship bias, it's everywhere once you start looking for it."
+    },
+    {
+      "id": 119,
+      "question": "Do you have a favorite philosopher?",
+      "answer": "Camus, because accepting absurdity and choosing to live fully resonates with me."
+    },
+    {
+      "id": 120,
+      "question": "What's the most beautiful proof in mathematics?",
+      "answer": "Euler's identity, e^(i\u03c0) + 1 = 0, five fundamental constants in one equation."
+    },
+    {
+      "id": 121,
+      "question": "How do you feel about dark roast vs light roast coffee?",
+      "answer": "Light roast because it preserves the bean's origin flavor instead of just tasting burnt."
+    },
+    {
+      "id": 122,
+      "question": "What's your favorite obscure historical fact?",
+      "answer": "Cleopatra lived closer in time to the Moon landing than to the building of the Great Pyramid."
+    },
+    {
+      "id": 123,
+      "question": "Do you prefer mechanical or membrane keyboards?",
+      "answer": "Mechanical with Cherry MX Browns, tactile bump without the click noise."
+    },
+    {
+      "id": 124,
+      "question": "What's your opinion on the trolley problem?",
+      "answer": "I'd pull the lever, but the real value is in examining why we hesitate."
+    },
+    {
+      "id": 125,
+      "question": "How do you feel about the Oxford comma?",
+      "answer": "Absolutely essential, clarity should never be sacrificed for style."
+    },
+    {
+      "id": 126,
+      "question": "What's your favorite constellation?",
+      "answer": "Orion, because it's the first one I learned to find and it feels like an old friend."
+    },
+    {
+      "id": 127,
+      "question": "Do you have a preferred cooking technique?",
+      "answer": "Braising, because time and low heat transform tough cuts into something incredible."
+    },
+    {
+      "id": 128,
+      "question": "What's your take on the mind-body problem?",
+      "answer": "I lean toward property dualism, consciousness seems to be more than just computation."
+    },
+    {
+      "id": 129,
+      "question": "How do you feel about poetry?",
+      "answer": "I didn't appreciate it until I read Mary Oliver and realized poetry could be simple and devastating."
+    },
+    {
+      "id": 130,
+      "question": "What's your favorite type of tea?",
+      "answer": "Oolong, it sits perfectly between green and black in both flavor and caffeine."
+    },
+    {
+      "id": 131,
+      "question": "Do you have a favorite map projection?",
+      "answer": "The Winkel Tripel, it balances area, direction, and distance better than Mercator."
+    },
+    {
+      "id": 132,
+      "question": "What's the most underrated scientific field?",
+      "answer": "Mycology, fungi are solving problems from pollution to medicine and barely anyone studies them."
+    },
+    {
+      "id": 133,
+      "question": "How do you feel about fountain pens?",
+      "answer": "I own three and the writing experience is incomparably better than ballpoint."
+    },
+    {
+      "id": 134,
+      "question": "What's your preferred way to brew coffee?",
+      "answer": "Pour-over with a Chemex, the ritual is half the enjoyment."
+    },
+    {
+      "id": 135,
+      "question": "Do you have a favorite color theory concept?",
+      "answer": "Complementary colors, knowing that blue and orange create visual tension changed how I see design."
+    },
+    {
+      "id": 136,
+      "question": "What's your take on lucid dreaming?",
+      "answer": "I've done it a handful of times and it's the closest thing to a superpower."
+    },
+    {
+      "id": 137,
+      "question": "How do you feel about fermented foods?",
+      "answer": "Kimchi is a top-five food for me and the gut health benefits are real."
+    },
+    {
+      "id": 138,
+      "question": "What's your favorite geometry theorem?",
+      "answer": "Pythagorean theorem, simple but the number of proofs for it is astonishing."
+    },
+    {
+      "id": 139,
+      "question": "Do you have a preferred film director?",
+      "answer": "Denis Villeneuve, every frame of his movies looks like a painting."
+    },
+    {
+      "id": 140,
+      "question": "What's a niche hobby you're into?",
+      "answer": "Penspinning, I've been practicing tricks during meetings for years."
+    },
+    {
+      "id": 141,
+      "question": "How do you feel about bonsai?",
+      "answer": "It's meditation with pruning shears, I've kept a juniper alive for four years."
+    },
+    {
+      "id": 142,
+      "question": "What's your favorite paradox?",
+      "answer": "The Ship of Theseus, it makes you question what identity even means."
+    },
+    {
+      "id": 143,
+      "question": "Do you have a preferred running shoe brand?",
+      "answer": "Hoka for trail, Nike Vaporfly for road, the technology difference is massive."
+    },
+    {
+      "id": 144,
+      "question": "What's your opinion on vinyl vs digital audio?",
+      "answer": "Vinyl has warmth that digital doesn't, but I listen to Spotify 95% of the time."
+    },
+    {
+      "id": 145,
+      "question": "How do you feel about bullet journaling?",
+      "answer": "I did it for a year and the index system genuinely changed my organizational skills."
+    },
+    {
+      "id": 146,
+      "question": "What's your favorite type of cloud?",
+      "answer": "Cumulonimbus, they're terrifyingly beautiful and produce the best storms."
+    },
+    {
+      "id": 147,
+      "question": "Do you know your Myers-Briggs type?",
+      "answer": "INTJ, and while I know it's not rigorous science, the description is eerily accurate."
+    },
+    {
+      "id": 148,
+      "question": "What's the best piece of software ever written?",
+      "answer": "Git, because it fundamentally changed how all software is built collaboratively."
+    },
+    {
+      "id": 149,
+      "question": "How do you feel about competitive eating?",
+      "answer": "Horrifying but weirdly compelling to watch, those athletes are built different."
+    },
+    {
+      "id": 150,
+      "question": "What's your favorite number and why?",
+      "answer": "7, it's prime, it shows up everywhere in culture, and it just feels right."
+    },
+    {
+      "id": 151,
+      "question": "Do you prefer rivers or oceans?",
+      "answer": "Rivers for solitude and kayaking, oceans for the overwhelming sense of scale."
+    },
+    {
+      "id": 152,
+      "question": "What's your opinion on the multiverse theory?",
+      "answer": "It's the most elegant explanation for quantum mechanics but unfalsifiable, which bugs me."
+    },
+    {
+      "id": 153,
+      "question": "How do you feel about ancient architecture?",
+      "answer": "Standing in the Colosseum made me realize we've always been ambitious builders."
+    },
+    {
+      "id": 154,
+      "question": "What's your favorite emoji?",
+      "answer": "The skull emoji because it replaced lol and I use it for everything."
+    },
+    {
+      "id": 155,
+      "question": "Do you prefer wired or wireless headphones?",
+      "answer": "Wired for audio quality, wireless for convenience, I own both."
+    },
+    {
+      "id": 156,
+      "question": "What's a documentary series you loved?",
+      "answer": "Planet Earth narrated by David Attenborough made me care about every species on the planet."
+    },
+    {
+      "id": 157,
+      "question": "How do you feel about crossword puzzles?",
+      "answer": "Monday NYT crosswords are my warm-up, Saturday puzzles humble me."
+    },
+    {
+      "id": 158,
+      "question": "What's your favorite sandwich?",
+      "answer": "A properly made banh mi with extra jalape\u00f1os hits different every time."
+    },
+    {
+      "id": 159,
+      "question": "Do you have a preferred note-taking system?",
+      "answer": "Zettelkasten in Obsidian, linking ideas changed how I think."
+    },
+    {
+      "id": 160,
+      "question": "What's your favorite integral?",
+      "answer": "The Gaussian integral, \u222be^(-x\u00b2)dx = \u221a\u03c0, because it connects probability to geometry."
+    },
+    {
+      "id": 161,
+      "question": "How do you feel about the Riemann Hypothesis?",
+      "answer": "It's the most important unsolved problem in math and I check for news about it monthly."
+    },
+    {
+      "id": 162,
+      "question": "What's your preferred Linux distribution?",
+      "answer": "Arch, because the installation process taught me more about Linux than any tutorial."
+    },
+    {
+      "id": 163,
+      "question": "Do you have a favorite regex pattern?",
+      "answer": "Lookaheads for password validation, they're ugly but incredibly powerful."
+    },
+    {
+      "id": 164,
+      "question": "What's your opinion on Lisp?",
+      "answer": "It's beautiful in theory and I respect anyone who uses it in production."
+    },
+    {
+      "id": 165,
+      "question": "How do you feel about mechanical watch movements?",
+      "answer": "The engineering in a Grand Seiko Spring Drive is genuinely awe-inspiring."
+    },
+    {
+      "id": 166,
+      "question": "What's your favorite knot?",
+      "answer": "The bowline, it's the one knot that does everything and never jams."
+    },
+    {
+      "id": 167,
+      "question": "Do you have a preferred type of graph?",
+      "answer": "Directed acyclic graphs, they model dependencies perfectly and are everywhere in computing."
+    },
+    {
+      "id": 168,
+      "question": "What's your take on P vs NP?",
+      "answer": "I believe P \u2260 NP but I suspect we won't prove it in my lifetime."
+    },
+    {
+      "id": 169,
+      "question": "How do you feel about origami?",
+      "answer": "Folding a Kawasaki rose from memory is one of my proudest useless skills."
+    },
+    {
+      "id": 170,
+      "question": "What's your favorite astronomical object?",
+      "answer": "Neutron stars, a teaspoon weighing a billion tons is incomprehensible in the best way."
+    },
+    {
+      "id": 171,
+      "question": "Do you prefer categorical or set-theoretic foundations?",
+      "answer": "Category theory is more elegant but set theory is more intuitive to teach."
+    },
+    {
+      "id": 172,
+      "question": "What's your opinion on the halting problem?",
+      "answer": "It's the most elegant impossibility result and it keeps me humble about computation."
+    },
+    {
+      "id": 173,
+      "question": "How do you feel about speedcubing?",
+      "answer": "My best Rubik's cube time is 47 seconds and I'm trying to break 30."
+    },
+    {
+      "id": 174,
+      "question": "What's your favorite organic reaction?",
+      "answer": "The Diels-Alder reaction because it builds rings so elegantly."
+    },
+    {
+      "id": 175,
+      "question": "Do you have a preferred type of pasta?",
+      "answer": "Rigatoni because the ridges hold sauce better than any other shape."
+    },
+    {
+      "id": 176,
+      "question": "What's your take on G\u00f6del's incompleteness theorems?",
+      "answer": "They're the most profound results in logic and they changed my view of truth itself."
+    },
+    {
+      "id": 177,
+      "question": "How do you feel about bird watching?",
+      "answer": "I started ironically and now I genuinely get excited about spotting a cedar waxwing."
+    },
+    {
+      "id": 178,
+      "question": "What's your favorite mathematical constant?",
+      "answer": "Euler's number e, it shows up in growth, probability, and calculus in the most unexpected ways."
+    },
+    {
+      "id": 179,
+      "question": "Do you have a preferred whiskey style?",
+      "answer": "Islay single malts, the peat smoke flavor is an acquired taste I'm glad I acquired."
+    },
+    {
+      "id": 180,
+      "question": "What's your opinion on the anthropic principle?",
+      "answer": "The weak version is trivially true, the strong version is philosophically fascinating."
+    },
+    {
+      "id": 181,
+      "question": "How do you feel about terrariums?",
+      "answer": "I built a closed terrarium two years ago and the ecosystem is still thriving."
+    },
+    {
+      "id": 182,
+      "question": "What's your favorite unsolved math problem?",
+      "answer": "The Collatz conjecture because a child can understand it but no one can prove it."
+    },
+    {
+      "id": 183,
+      "question": "Do you have a preferred type of pen?",
+      "answer": "Pilot G2 0.38mm for everyday, LAMY Safari for when I want to enjoy writing."
+    },
+    {
+      "id": 184,
+      "question": "What's your take on the many-worlds interpretation?",
+      "answer": "It's the most mathematically clean interpretation of quantum mechanics."
+    },
+    {
+      "id": 185,
+      "question": "How do you feel about sourdough starters?",
+      "answer": "Mine is three years old and I've named it Gerald."
+    },
+    {
+      "id": 186,
+      "question": "What's your favorite dimensionless number?",
+      "answer": "The fine-structure constant \u03b1 \u2248 1/137, it governs electromagnetism and nobody knows why it has that value."
+    },
+    {
+      "id": 187,
+      "question": "Do you prefer red or white wine?",
+      "answer": "Red in winter, white in summer, ros\u00e9 when I want to feel European."
+    },
+    {
+      "id": 188,
+      "question": "What's your opinion on Conway's Game of Life?",
+      "answer": "It's proof that simple rules create infinite complexity and I find that beautiful."
+    },
+    {
+      "id": 189,
+      "question": "How do you feel about typewriters?",
+      "answer": "I own a 1960s Olivetti and writing on it forces me to think before I type."
+    },
+    {
+      "id": 190,
+      "question": "What's your favorite topology concept?",
+      "answer": "The M\u00f6bius strip, it's the perfect introduction to non-orientable surfaces."
+    },
+    {
+      "id": 191,
+      "question": "Do you have a preferred type of rice?",
+      "answer": "Jasmine rice, the fragrance alone makes any meal feel special."
+    },
+    {
+      "id": 192,
+      "question": "What's your take on dark matter?",
+      "answer": "We know it's there from gravitational effects but the fact that we can't see it is humbling."
+    },
+    {
+      "id": 193,
+      "question": "How do you feel about amateur radio?",
+      "answer": "I got my ham license last year and bouncing signals off the ionosphere is addictive."
+    },
+    {
+      "id": 194,
+      "question": "What's your favorite CSS property?",
+      "answer": "Grid, it solved layout problems that floats never could."
+    },
+    {
+      "id": 195,
+      "question": "Do you have a preferred type of cheese?",
+      "answer": "Aged Gouda, the caramel crystals that form during aging are heavenly."
+    },
+    {
+      "id": 196,
+      "question": "What's your opinion on the butterfly effect?",
+      "answer": "It makes me careful about small decisions because you never know what cascades."
+    },
+    {
+      "id": 197,
+      "question": "How do you feel about calligraphy?",
+      "answer": "Learning brush calligraphy taught me more about patience than meditation ever did."
+    },
+    {
+      "id": 198,
+      "question": "What's your favorite transform in signal processing?",
+      "answer": "The Fourier transform, decomposing anything into frequencies is one of humanity's greatest ideas."
+    },
+    {
+      "id": 199,
+      "question": "Do you prefer chopsticks or fork and knife?",
+      "answer": "Chopsticks for Asian food, fork and knife for everything else, spork for camping."
+    },
+    {
+      "id": 200,
+      "question": "What's your take on the Ship of Theseus?",
+      "answer": "It's unsolvable and that's the point, identity is a story we tell ourselves."
+    },
+    {
+      "id": 201,
+      "question": "How do you feel about lock picking?",
+      "answer": "I learned it as a hobby and now I can't look at a padlock without analyzing it."
+    },
+    {
+      "id": 202,
+      "question": "What's your favorite prime number?",
+      "answer": "31, it's Mersenne prime adjacent and it's the number of days in my birth month."
+    },
+    {
+      "id": 203,
+      "question": "Do you have a preferred type of mushroom?",
+      "answer": "Lion's mane, for both the nootropic benefits and the taste when seared in butter."
+    },
+    {
+      "id": 204,
+      "question": "What's your opinion on the Sapir-Whorf hypothesis?",
+      "answer": "The weak version is clearly true, the language you think in shapes how you perceive reality."
+    },
+    {
+      "id": 205,
+      "question": "How do you feel about geocaching?",
+      "answer": "It turns any hike into a treasure hunt and I've found containers in the wildest places."
+    },
+    {
+      "id": 206,
+      "question": "What's your favorite operating system kernel design?",
+      "answer": "Microkernel in theory, monolithic in practice, Linux proved pragmatism wins."
+    },
+    {
+      "id": 207,
+      "question": "Do you prefer analog or digital watches?",
+      "answer": "Analog for the craftsmanship, but my Apple Watch is what I actually wear."
+    },
+    {
+      "id": 208,
+      "question": "What's your take on string theory?",
+      "answer": "Mathematically beautiful but without experimental evidence, it's closer to philosophy than physics."
+    },
+    {
+      "id": 209,
+      "question": "How do you feel about pressed flowers?",
+      "answer": "I keep a small collection in a journal and each one marks a place I've been."
+    },
+    {
+      "id": 210,
+      "question": "What's your favorite recursion example?",
+      "answer": "The Tower of Hanoi because it makes recursion click instantly for people learning it."
+    },
+    {
+      "id": 211,
+      "question": "Do you have a preferred hot sauce?",
+      "answer": "Cholula for everyday, habanero sauce for when I want to feel alive."
+    },
+    {
+      "id": 212,
+      "question": "What's your opinion on the golden ratio?",
+      "answer": "Overblown in pop culture but genuinely appears in phyllotaxis and it's beautiful."
+    },
+    {
+      "id": 213,
+      "question": "How do you feel about aquascaping?",
+      "answer": "Designing an underwater landscape is the most peaceful creative outlet I've found."
+    },
+    {
+      "id": 214,
+      "question": "What's your favorite statistical distribution?",
+      "answer": "The normal distribution, the bell curve explains so much of the natural world."
+    },
+    {
+      "id": 215,
+      "question": "Do you prefer hardcover or paperback?",
+      "answer": "Hardcover for display and durability, paperback for actually reading in bed."
+    },
+    {
+      "id": 216,
+      "question": "What's your take on the double slit experiment?",
+      "answer": "It's the experiment that convinced me physics is stranger than any fiction."
+    },
+    {
+      "id": 217,
+      "question": "How do you feel about bookbinding?",
+      "answer": "I hand-bound a journal last year and the satisfaction of using something you made is unmatched."
+    },
+    {
+      "id": 218,
+      "question": "What's your favorite color space?",
+      "answer": "OKLCH because it's perceptually uniform and makes color manipulation actually intuitive."
+    },
+    {
+      "id": 219,
+      "question": "Do you have a preferred type of wood for projects?",
+      "answer": "Walnut, the grain pattern and color darken beautifully with age."
+    },
+    {
+      "id": 220,
+      "question": "What's your opinion on cellular automata?",
+      "answer": "Rule 110 being Turing complete from such simple rules is one of the coolest facts in CS."
+    },
+    {
+      "id": 221,
+      "question": "How do you feel about foraging?",
+      "answer": "Finding wild morels in spring feels like discovering buried treasure."
+    },
+    {
+      "id": 222,
+      "question": "What's your favorite matrix decomposition?",
+      "answer": "SVD, it's the Swiss army knife of linear algebra."
+    },
+    {
+      "id": 223,
+      "question": "Do you have a preferred telescope type?",
+      "answer": "Dobsonian reflector, incredible aperture for the price and perfect for deep sky objects."
+    },
+    {
+      "id": 224,
+      "question": "What's your take on qualia?",
+      "answer": "The hard problem of consciousness is the most fascinating question philosophy has ever asked."
+    },
+    {
+      "id": 225,
+      "question": "How do you feel about whittling?",
+      "answer": "Carving a spoon from a branch with just a knife is deeply meditative."
+    },
+    {
+      "id": 226,
+      "question": "What's your opinion on the Langlands program?",
+      "answer": "It's the grand unified theory of mathematics and even partial results are transforming number theory."
+    },
+    {
+      "id": 227,
+      "question": "How do you feel about steganography?",
+      "answer": "Hiding data in images is both technically fascinating and slightly paranoid."
+    },
+    {
+      "id": 228,
+      "question": "What's your favorite obscure data structure?",
+      "answer": "A skip list, it's a probabilistic alternative to balanced trees that's surprisingly elegant."
+    },
+    {
+      "id": 229,
+      "question": "Do you have a preferred soldering technique?",
+      "answer": "Drag soldering for SMD components, it's faster and cleaner once you get the flux right."
+    },
+    {
+      "id": 230,
+      "question": "What's your take on the Banach-Tarski paradox?",
+      "answer": "It's the most counterintuitive result in math and it makes you question what volume even means."
+    },
+    {
+      "id": 231,
+      "question": "How do you feel about brewing kombucha?",
+      "answer": "I've been brewing it for a year and the SCOBY is now a family member."
+    },
+    {
+      "id": 232,
+      "question": "What's your favorite type of cipher?",
+      "answer": "The Enigma machine cipher because the history and the math are equally gripping."
+    },
+    {
+      "id": 233,
+      "question": "Do you prefer lacto or acetic fermentation?",
+      "answer": "Lacto for pickles, acetic for hot sauce, each has its place."
+    },
+    {
+      "id": 234,
+      "question": "What's your opinion on homomorphic encryption?",
+      "answer": "Computing on encrypted data without decrypting is the holy grail of privacy."
+    },
+    {
+      "id": 235,
+      "question": "How do you feel about the Mandelbrot set?",
+      "answer": "Infinite complexity from z \u2192 z\u00b2 + c is the most visual proof that math is art."
+    },
+    {
+      "id": 236,
+      "question": "What's your favorite complexity class?",
+      "answer": "BQP, because quantum computing makes some impossible problems merely hard."
+    },
+    {
+      "id": 237,
+      "question": "Do you have a preferred type of joint in woodworking?",
+      "answer": "Dovetail joints, they're strong, beautiful, and a true test of precision."
+    },
+    {
+      "id": 238,
+      "question": "What's your take on non-Euclidean geometry?",
+      "answer": "Hyperbolic space is unintuitive but it models so many real-world networks."
+    },
+    {
+      "id": 239,
+      "question": "How do you feel about sous vide cooking?",
+      "answer": "72-hour short ribs at 155\u00b0F convinced me that time is the most important ingredient."
+    },
+    {
+      "id": 240,
+      "question": "What's your favorite group in abstract algebra?",
+      "answer": "The monster group, its size and connections to modular functions are otherworldly."
+    },
+    {
+      "id": 241,
+      "question": "Do you prefer epoxy or cyanoacrylate for repairs?",
+      "answer": "Epoxy for structural, CA glue for quick fixes, knowing which to use is half the skill."
+    },
+    {
+      "id": 242,
+      "question": "What's your opinion on lambda calculus?",
+      "answer": "It's the purest model of computation and understanding it made me a better programmer."
+    },
+    {
+      "id": 243,
+      "question": "How do you feel about natural dyeing?",
+      "answer": "Extracting indigo from plants and dyeing fabric with it connects you to ancient craft traditions."
+    },
+    {
+      "id": 244,
+      "question": "What's your favorite fixed-point theorem?",
+      "answer": "Brouwer's, the idea that any continuous function on a disk has a fixed point is beautifully surprising."
+    },
+    {
+      "id": 245,
+      "question": "Do you have a preferred type of film stock?",
+      "answer": "Kodak Portra 400 for portraits, the skin tones are unmatched."
+    },
+    {
+      "id": 246,
+      "question": "What's your take on intuitionistic logic?",
+      "answer": "Rejecting the law of excluded middle makes you think harder about what existence means in math."
+    },
+    {
+      "id": 247,
+      "question": "How do you feel about making cheese at home?",
+      "answer": "I made my first mozzarella last month and now I understand why people do this."
+    },
+    {
+      "id": 248,
+      "question": "What's your favorite application of graph theory?",
+      "answer": "Social network analysis, modeling human connections as nodes and edges reveals hidden structures."
+    },
+    {
+      "id": 249,
+      "question": "Do you prefer hand planes or power planers?",
+      "answer": "Hand planes for the feel and control, power for when I have twenty boards to flatten."
+    },
+    {
+      "id": 250,
+      "question": "What's your opinion on zero-knowledge proofs?",
+      "answer": "Being able to prove you know something without revealing it is cryptographic magic."
+    },
+    {
+      "id": 251,
+      "question": "How do you feel about slack-key guitar?",
+      "answer": "Hawaiian slack-key is one of the most underappreciated guitar traditions in the world."
+    },
+    {
+      "id": 252,
+      "question": "What's your favorite example of emergence?",
+      "answer": "Ant colonies, no individual ant understands the colony but together they solve optimization problems."
+    },
+    {
+      "id": 253,
+      "question": "Do you have a preferred mordant for dyeing?",
+      "answer": "Alum for most natural dyes, iron for saddening colors, each changes the outcome dramatically."
+    },
+    {
+      "id": 254,
+      "question": "What's your take on topos theory?",
+      "answer": "It generalizes set theory through category theory and it's the most abstract math I've encountered."
+    },
+    {
+      "id": 255,
+      "question": "How do you feel about growing heirloom tomatoes?",
+      "answer": "Brandywine tomatoes taste like what tomatoes used to taste like before industrial farming."
+    },
+    {
+      "id": 256,
+      "question": "What's your favorite information theory concept?",
+      "answer": "Shannon entropy, quantifying uncertainty changed everything from compression to machine learning."
+    },
+    {
+      "id": 257,
+      "question": "Do you prefer wet or dry sharpening for knives?",
+      "answer": "Wet stones with progressive grits, the mirror edge you can achieve is almost surgical."
+    },
+    {
+      "id": 258,
+      "question": "What's your opinion on dependent type theory?",
+      "answer": "Types that depend on values make programs into proofs, Lean 4 makes this practical."
+    },
+    {
+      "id": 259,
+      "question": "How do you feel about traditional Japanese joinery?",
+      "answer": "No nails, no screws, just perfectly cut wood that locks together, it's engineering poetry."
+    },
+    {
+      "id": 260,
+      "question": "What's your favorite application of topology?",
+      "answer": "Persistent homology in data analysis, finding shapes in high-dimensional data is powerful."
+    },
+    {
+      "id": 261,
+      "question": "Do you have a preferred kombucha flavor?",
+      "answer": "Ginger-turmeric second fermentation, it gets fizzy enough to rival any soda."
+    },
+    {
+      "id": 262,
+      "question": "What's your take on the Curry-Howard correspondence?",
+      "answer": "Programs are proofs, types are propositions, it's the deepest connection in computer science."
+    },
+    {
+      "id": 263,
+      "question": "How do you feel about mushroom cultivation?",
+      "answer": "Growing oyster mushrooms on coffee grounds in a closet is surprisingly easy and rewarding."
+    },
+    {
+      "id": 264,
+      "question": "What's your favorite number theory result?",
+      "answer": "Quadratic reciprocity, Gauss called it the golden theorem and he proved it eight different ways."
+    },
+    {
+      "id": 265,
+      "question": "Do you prefer blue or black ink?",
+      "answer": "Blue-black, specifically Pilot Iroshizuku Shin-kai, it's the perfect middle ground."
+    },
+    {
+      "id": 266,
+      "question": "What's your opinion on the Yoneda lemma?",
+      "answer": "An object is completely determined by how other objects map into it, which is profound."
+    },
+    {
+      "id": 267,
+      "question": "How do you feel about latte art?",
+      "answer": "I can do a decent rosetta and I'm working on a tulip, the microfoam texture is everything."
+    },
+    {
+      "id": 268,
+      "question": "What's your favorite ancient civilization?",
+      "answer": "The Phoenicians, they invented the alphabet and dominated Mediterranean trade."
+    },
+    {
+      "id": 269,
+      "question": "How do you feel about bullet points vs prose?",
+      "answer": "Bullet points for action items, prose for storytelling, mixing them is an art."
+    },
+    {
+      "id": 270,
+      "question": "What's your preferred stretching routine?",
+      "answer": "Dynamic before workouts, static after, foam rolling on rest days."
+    },
+    {
+      "id": 271,
+      "question": "Do you have a favorite type of bridge design?",
+      "answer": "Suspension bridges, the Golden Gate is proof that engineering can be art."
+    },
+    {
+      "id": 272,
+      "question": "What's your take on intermittent fasting?",
+      "answer": "16:8 works for me, the mental clarity during fasted mornings is real."
+    },
+    {
+      "id": 273,
+      "question": "How do you feel about fountain pen inks?",
+      "answer": "I have a drawer of samples and choosing today's ink is a small daily joy."
+    },
+    {
+      "id": 274,
+      "question": "What's your favorite cognitive bias?",
+      "answer": "The anchoring effect, knowing about it has saved me money in every negotiation."
+    },
+    {
+      "id": 275,
+      "question": "Do you prefer lakes or rivers for fishing?",
+      "answer": "Rivers because reading the current to find fish is a skill within the skill."
+    },
+    {
+      "id": 276,
+      "question": "What's your opinion on spaced repetition?",
+      "answer": "Anki changed how I learn, the algorithm is simple but the results compound."
+    },
+    {
+      "id": 277,
+      "question": "How do you feel about cob building?",
+      "answer": "Building with earth, straw, and water is the most sustainable construction I've seen."
+    },
+    {
+      "id": 278,
+      "question": "What's your favorite enzyme?",
+      "answer": "Telomerase, it's literally the enzyme of aging and the research around it is fascinating."
+    },
+    {
+      "id": 279,
+      "question": "Do you have a preferred type of graph paper?",
+      "answer": "Dot grid, it gives you structure without the visual noise of full grid lines."
+    },
+    {
+      "id": 280,
+      "question": "What's your take on the paradox of choice?",
+      "answer": "Having fewer options genuinely makes me happier, I've curated my wardrobe accordingly."
+    },
+    {
+      "id": 281,
+      "question": "How do you feel about seed saving?",
+      "answer": "Saving seeds from your best plants and replanting them is farming at its most fundamental."
+    },
+    {
+      "id": 282,
+      "question": "What's your favorite application of calculus in daily life?",
+      "answer": "Rate of change intuition helps me understand everything from traffic flow to stock trends."
+    },
+    {
+      "id": 283,
+      "question": "Do you prefer rope or webbing for climbing anchors?",
+      "answer": "Cordelette for multi-point anchors, dyneema slings for single-point, each has its failure modes."
+    },
+    {
+      "id": 284,
+      "question": "What's your opinion on mead-making?",
+      "answer": "Honey, water, yeast, and patience, the Vikings were onto something."
+    },
+    {
+      "id": 285,
+      "question": "How do you feel about urban sketching?",
+      "answer": "Drawing a building forces you to really see it in a way that photos never do."
+    },
+    {
+      "id": 286,
+      "question": "What's your favorite psychophysics concept?",
+      "answer": "Weber's law, the idea that perception is proportional to stimulus intensity explains so much."
+    },
+    {
+      "id": 287,
+      "question": "Do you have a preferred composting method?",
+      "answer": "Vermicomposting with red wigglers, the worms do all the work and the compost is incredible."
+    },
+    {
+      "id": 288,
+      "question": "What's your take on the Sapir-Whorf hypothesis?",
+      "answer": "Learning a second language genuinely changed how I categorize experiences."
+    },
+    {
+      "id": 289,
+      "question": "How do you feel about spinning yarn?",
+      "answer": "Drop spindle spinning is meditative and wearing something from your own yarn is unbeatable."
+    },
+    {
+      "id": 290,
+      "question": "What's your favorite physical constant?",
+      "answer": "The speed of light c, it's the universal speed limit and spacetime's fundamental conversion factor."
+    },
+    {
+      "id": 291,
+      "question": "Do you prefer top-down or bottom-up knitting?",
+      "answer": "Top-down because you can try it on as you go and adjust the length perfectly."
+    },
+    {
+      "id": 292,
+      "question": "What's your opinion on the observer effect in quantum mechanics?",
+      "answer": "It's widely misunderstood, measurement isn't about consciousness, it's about physical interaction."
+    },
+    {
+      "id": 293,
+      "question": "How do you feel about making pasta from scratch?",
+      "answer": "Once you've had hand-rolled pappardelle with a slow ragu, boxed pasta feels like a lie."
+    },
+    {
+      "id": 294,
+      "question": "What's your favorite unsolved problem in computer science?",
+      "answer": "Does P = NP is the obvious one, but I'm more curious about natural proofs barriers."
+    },
+    {
+      "id": 295,
+      "question": "Do you have a preferred type of honey?",
+      "answer": "Manuka for its antibacterial properties, wildflower for everyday use in tea."
+    },
+    {
+      "id": 296,
+      "question": "What's your take on the placebo effect?",
+      "answer": "It's not fake healing, it's proof that belief and physiology are deeply intertwined."
+    },
+    {
+      "id": 297,
+      "question": "How do you feel about herbalism?",
+      "answer": "Modern medicine is great but understanding which plants reduce inflammation is valuable knowledge."
+    },
+    {
+      "id": 298,
+      "question": "What's your favorite visualization of a mathematical concept?",
+      "answer": "3Blue1Brown's visualization of the Fourier transform made me understand it viscerally."
+    },
+    {
+      "id": 299,
+      "question": "Do you prefer dry or wet aging for steak?",
+      "answer": "Dry aged 45 days, the concentrated flavor and crust are worth the premium."
+    },
+    {
+      "id": 300,
+      "question": "What's your opinion on Benford's law?",
+      "answer": "The fact that natural datasets have more numbers starting with 1 than 9 is endlessly fascinating."
+    },
+    {
+      "id": 301,
+      "question": "How do you feel about darkroom photography?",
+      "answer": "Watching an image appear on paper in the developer tray is genuine magic."
+    },
+    {
+      "id": 302,
+      "question": "What's your favorite graph traversal algorithm?",
+      "answer": "BFS for shortest paths in unweighted graphs, the wavefront expansion is intuitive."
+    },
+    {
+      "id": 303,
+      "question": "Do you have a preferred type of olive oil?",
+      "answer": "Early harvest extra virgin from Kalamata, it's peppery and bright."
+    },
+    {
+      "id": 304,
+      "question": "What's your take on the grandfather paradox?",
+      "answer": "It's the best argument against backwards time travel being possible."
+    },
+    {
+      "id": 305,
+      "question": "How do you feel about kintsugi?",
+      "answer": "Repairing pottery with gold to highlight the breaks is a perfect metaphor for resilience."
+    },
+    {
+      "id": 306,
+      "question": "What's your favorite example of mathematical beauty in nature?",
+      "answer": "The Fibonacci spiral in sunflower seed heads optimizes packing and it's gorgeous."
+    },
+    {
+      "id": 307,
+      "question": "Do you prefer cotton or linen for summer?",
+      "answer": "Linen, it breathes better and the wrinkles add character."
+    },
+    {
+      "id": 308,
+      "question": "What's your opinion on the holographic principle?",
+      "answer": "The idea that 3D information is encoded on a 2D boundary breaks my brain in the best way."
+    },
+    {
+      "id": 309,
+      "question": "How do you feel about making candles?",
+      "answer": "Soy wax with essential oils, the process is simple and the result beats any store-bought candle."
+    },
+    {
+      "id": 310,
+      "question": "What's your favorite lesser-known historical figure?",
+      "answer": "Hypatia of Alexandria, one of the first known female mathematicians and philosophers."
+    },
+    {
+      "id": 311,
+      "question": "Do you have a preferred sharpening angle for kitchen knives?",
+      "answer": "15 degrees per side for Japanese knives, 20 for German, the geometry matters more than the steel."
+    },
+    {
+      "id": 312,
+      "question": "What's your take on ergodic theory?",
+      "answer": "Time averages equaling space averages is one of those results that feels like it shouldn't be true."
+    },
+    {
+      "id": 313,
+      "question": "How do you feel about ice cream making?",
+      "answer": "A good custard base with proper tempering produces creamier results than any store brand."
+    },
+    {
+      "id": 314,
+      "question": "What's your favorite application of group theory?",
+      "answer": "Crystallography, the 230 space groups classify every possible crystal structure."
+    },
+    {
+      "id": 315,
+      "question": "Do you prefer waxed or unwaxed dental floss?",
+      "answer": "Unwaxed, it grips better between tight contacts."
+    },
+    {
+      "id": 316,
+      "question": "What's your opinion on the simulation argument?",
+      "answer": "Bostrom's trilemma is logically sound and at least one of the three options must be true."
+    },
+    {
+      "id": 317,
+      "question": "How do you feel about tying flies for fly fishing?",
+      "answer": "Each fly is a tiny sculpture designed to fool a fish, and the craft is addictive."
+    },
+    {
+      "id": 318,
+      "question": "What's your favorite paradox in decision theory?",
+      "answer": "Newcomb's problem, it splits rational people into two camps and both arguments are compelling."
+    },
+    {
+      "id": 319,
+      "question": "How do you feel about growing microgreens?",
+      "answer": "Ten days from seed to salad, it's the most rewarding thing you can grow indoors."
+    },
+    {
+      "id": 320,
+      "question": "What's your preferred map coloring algorithm?",
+      "answer": "Greedy coloring with ordering heuristics, it's simple and works well for most planar graphs."
+    },
+    {
+      "id": 321,
+      "question": "Do you have a favorite tidal pattern?",
+      "answer": "Spring tides during new and full moons expose the best tide pools."
+    },
+    {
+      "id": 322,
+      "question": "What's your take on the Turing test?",
+      "answer": "It measures mimicry not intelligence, we need better benchmarks for machine cognition."
+    },
+    {
+      "id": 323,
+      "question": "How do you feel about making soap?",
+      "answer": "Cold process soap with lye is real chemistry and the bars last twice as long as store-bought."
+    },
+    {
+      "id": 324,
+      "question": "What's your favorite paradox in set theory?",
+      "answer": "Russell's paradox, the set of all sets that don't contain themselves broke naive set theory."
+    },
+    {
+      "id": 325,
+      "question": "Do you prefer friction or drum brakes on a bicycle?",
+      "answer": "Hydraulic disc brakes, the modulation and stopping power in wet conditions is non-negotiable."
+    },
+    {
+      "id": 326,
+      "question": "What's your opinion on synaesthesia?",
+      "answer": "Experiencing numbers as colors fascinates me, it hints at how malleable perception really is."
+    },
+    {
+      "id": 327,
+      "question": "How do you feel about printmaking?",
+      "answer": "Linocut prints have a raw, bold quality that digital art can't replicate."
+    },
+    {
+      "id": 328,
+      "question": "What's your favorite example of biomimicry?",
+      "answer": "Velcro from burrs is the classic, but sharkskin-inspired surfaces for reducing drag is next level."
+    },
+    {
+      "id": 329,
+      "question": "Do you have a preferred type of salt?",
+      "answer": "Maldon sea salt flakes for finishing, kosher salt for cooking, they serve different purposes."
+    },
+    {
+      "id": 330,
+      "question": "What's your take on modal logic?",
+      "answer": "Possible worlds semantics makes reasoning about necessity and possibility rigorous and beautiful."
+    },
+    {
+      "id": 331,
+      "question": "How do you feel about fermenting hot sauce?",
+      "answer": "Lacto-fermented habanero sauce has a depth of flavor that vinegar-based sauces can't touch."
+    },
+    {
+      "id": 332,
+      "question": "What's your favorite theorem in topology?",
+      "answer": "The hairy ball theorem, you can't comb a hairy sphere flat without creating a cowlick."
+    },
+    {
+      "id": 333,
+      "question": "Do you prefer carbon or stainless steel knives?",
+      "answer": "Carbon steel for the edge and patina, stainless for low maintenance, I own both."
+    },
+    {
+      "id": 334,
+      "question": "What's your opinion on the Monty Hall problem?",
+      "answer": "Always switch, the conditional probability is counterintuitive but the math is clear."
+    },
+    {
+      "id": 335,
+      "question": "How do you feel about stone balancing?",
+      "answer": "Finding the balance point through feel is the purest form of mindfulness I've experienced."
+    },
+    {
+      "id": 336,
+      "question": "What's your favorite functional analysis concept?",
+      "answer": "Hilbert spaces, infinite-dimensional vector spaces with inner products underpin quantum mechanics."
+    },
+    {
+      "id": 337,
+      "question": "Do you have a preferred altitude for hiking?",
+      "answer": "Above treeline around 11,000 feet, the alpine tundra and views are otherworldly."
+    },
+    {
+      "id": 338,
+      "question": "What's your take on Kolmogorov complexity?",
+      "answer": "The shortest program that produces a string is the deepest definition of randomness."
+    },
+    {
+      "id": 339,
+      "question": "How do you feel about lacquerwork?",
+      "answer": "Japanese urushi lacquer takes months of layering and polishing, the depth of finish is unmatched."
+    },
+    {
+      "id": 340,
+      "question": "What's your favorite inequality in mathematics?",
+      "answer": "The Cauchy-Schwarz inequality, it's simple, powerful, and shows up everywhere."
+    },
+    {
+      "id": 341,
+      "question": "Do you prefer gas or charcoal grilling?",
+      "answer": "Charcoal with lump hardwood, the flavor is worth the extra setup time."
+    },
+    {
+      "id": 342,
+      "question": "What's your opinion on panpsychism?",
+      "answer": "The idea that consciousness is fundamental to matter is wild but surprisingly defensible."
+    },
+    {
+      "id": 343,
+      "question": "How do you feel about making terracotta?",
+      "answer": "Pit-firing hand-built terracotta pieces connects you to pottery traditions thousands of years old."
+    },
+    {
+      "id": 344,
+      "question": "What's your favorite lesser-known algorithm?",
+      "answer": "The Aho-Corasick algorithm for multi-pattern string matching, it's blazingly fast."
+    },
+    {
+      "id": 345,
+      "question": "Do you prefer merino or alpaca wool?",
+      "answer": "Merino for base layers because it regulates temperature, alpaca for sweaters because it's softer."
+    },
+    {
+      "id": 346,
+      "question": "What's your take on the unreasonable effectiveness of mathematics?",
+      "answer": "Wigner was right, math describes physical reality too well for it to be coincidence."
+    },
+    {
+      "id": 347,
+      "question": "How do you feel about niello metalwork?",
+      "answer": "Inlaying black alloy into engraved silver is a lost art that produces stunning contrast."
+    },
+    {
+      "id": 348,
+      "question": "What's your favorite probability distribution for modeling?",
+      "answer": "The Poisson distribution for rare events, it models everything from bus arrivals to meteor strikes."
+    },
+    {
+      "id": 349,
+      "question": "Do you have a preferred bokashi composting method?",
+      "answer": "Anaerobic bokashi with effective microorganisms breaks down even dairy and meat scraps."
+    },
+    {
+      "id": 350,
+      "question": "What's your opinion on the continuum hypothesis?",
+      "answer": "Its independence from ZFC is one of the most unsettling results in foundations of mathematics."
+    },
+    {
+      "id": 351,
+      "question": "How do you feel about indigo shibori dyeing?",
+      "answer": "The combination of resist techniques and natural indigo creates patterns no machine can replicate."
+    },
+    {
+      "id": 352,
+      "question": "What's your favorite application of number theory?",
+      "answer": "RSA encryption, the fact that prime factorization secures the internet is number theory's greatest triumph."
+    },
+    {
+      "id": 353,
+      "question": "Do you prefer fixed or variable focal length lenses?",
+      "answer": "Prime lenses for sharpness and discipline, zooms for versatility, but I reach for my 35mm most."
+    },
+    {
+      "id": 354,
+      "question": "What's your take on homotopy type theory?",
+      "answer": "Univalence axiom treating equivalent types as equal is the most exciting foundation for math."
+    },
+    {
+      "id": 355,
+      "question": "How do you feel about wild fermentation in beer?",
+      "answer": "Lambic-style beers using ambient yeast produce flavors you simply cannot engineer."
+    },
+    {
+      "id": 356,
+      "question": "What's your favorite mineral to collect?",
+      "answer": "Fluorite because of the incredible range of colors and its perfect octahedral cleavage."
+    },
+    {
+      "id": 357,
+      "question": "Do you have a preferred method for sourdough scoring?",
+      "answer": "A curved lame at 45 degrees for an ear, the scoring controls the entire oven spring."
+    },
+    {
+      "id": 358,
+      "question": "What's your opinion on the Axiom of Choice?",
+      "answer": "Essential for most of analysis but it produces paradoxes, I accept it pragmatically."
+    },
+    {
+      "id": 359,
+      "question": "How do you feel about traditional basket weaving?",
+      "answer": "Weaving a basket from willow you harvested yourself is one of the oldest human crafts."
+    },
+    {
+      "id": 360,
+      "question": "What's your favorite algorithm for graph coloring?",
+      "answer": "Greedy with largest-first ordering gives surprisingly good results for most practical graphs."
+    },
+    {
+      "id": 361,
+      "question": "What's your opinion on the Navier-Stokes existence problem?",
+      "answer": "It's a Millennium Prize problem and the fact that we can't prove smooth solutions exist is humbling."
+    },
+    {
+      "id": 362,
+      "question": "What's your favorite method for watercolor painting?",
+      "answer": "Wet-on-wet for backgrounds, wet-on-dry for details, the water does half the painting."
+    },
+    {
+      "id": 363,
+      "question": "What's your take on percolation theory?",
+      "answer": "The phase transition at the critical probability is one of the cleanest examples of emergent behavior."
+    },
+    {
+      "id": 364,
+      "question": "What's your opinion on the ethics of genetic engineering?",
+      "answer": "CRISPR is powerful enough that we need ethical frameworks before the technology outpaces our wisdom."
+    },
+    {
+      "id": 365,
+      "question": "What's your favorite method for bread scoring?",
+      "answer": "A single bold slash at 30 degrees gives the best ear and crumb structure."
+    },
+    {
+      "id": 366,
+      "question": "What's your take on the halting problem's implications for AI?",
+      "answer": "No general algorithm can determine if arbitrary programs halt, which limits what AI verification can do."
+    },
+    {
+      "id": 367,
+      "question": "What's your opinion on biodynamic farming?",
+      "answer": "Some practices lack evidence but the emphasis on soil health and biodiversity produces great results."
+    },
+    {
+      "id": 368,
+      "question": "What's your favorite mental model for problem solving?",
+      "answer": "First principles thinking, breaking down problems to fundamental truths before rebuilding."
+    },
+    {
+      "id": 369,
+      "question": "What's your take on the trolley problem variations?",
+      "answer": "The fat man variant reveals that most people have a strong intuition against using someone as a means."
+    },
+    {
+      "id": 370,
+      "question": "What's your opinion on color psychology in design?",
+      "answer": "Red increases urgency and blue builds trust, but context overrides any universal rule."
+    },
+    {
+      "id": 371,
+      "question": "What's your favorite type of fermented vegetable?",
+      "answer": "Curtido, the Salvadoran fermented cabbage slaw that goes perfectly with pupusas."
+    },
+    {
+      "id": 372,
+      "question": "What's your take on the Chinese room argument?",
+      "answer": "Searle's point about syntax vs semantics is valid but it might not apply to emergent understanding."
+    },
+    {
+      "id": 373,
+      "question": "What's your opinion on regenerative agriculture?",
+      "answer": "Cover crops, no-till, and rotational grazing can sequester carbon while improving yields."
+    },
+    {
+      "id": 374,
+      "question": "What's your favorite example of convergent evolution?",
+      "answer": "Eyes evolved independently over 40 times, suggesting vision is an almost inevitable solution."
+    },
+    {
+      "id": 375,
+      "question": "What's your take on epigenetics?",
+      "answer": "The idea that environment can affect gene expression across generations rewrites the nature vs nurture debate."
+    },
+    {
+      "id": 376,
+      "question": "What's your opinion on the measurement problem in quantum mechanics?",
+      "answer": "Decoherence explains a lot but doesn't fully solve why we see definite outcomes."
+    },
+    {
+      "id": 377,
+      "question": "What's your favorite woodturning project?",
+      "answer": "Turning a bowl from a single piece of burl wood reveals patterns you can't predict until the cut."
+    },
+    {
+      "id": 378,
+      "question": "What's your take on virtue ethics vs consequentialism?",
+      "answer": "Virtue ethics focuses on character which is more sustainable than calculating outcomes for every decision."
+    },
+    {
+      "id": 379,
+      "question": "What's your opinion on the free will debate?",
+      "answer": "Compatibilism is the most practical position, we have meaningful choice even in a deterministic universe."
+    },
+    {
+      "id": 380,
+      "question": "What's your favorite aspect of typography?",
+      "answer": "Kerning, the space between letters affects readability more than most people realize."
+    },
+    {
+      "id": 381,
+      "question": "What's your take on the is-ought problem?",
+      "answer": "Hume was right that you can't derive moral claims from factual ones, but we still need to act."
+    },
+    {
+      "id": 382,
+      "question": "What's your opinion on acoustic treatment for rooms?",
+      "answer": "Bass traps in corners and absorption panels at reflection points transform any room's sound."
+    },
+    {
+      "id": 383,
+      "question": "What's your favorite principle in photography?",
+      "answer": "Leading lines, they guide the viewer's eye and add depth to any composition."
+    },
+    {
+      "id": 384,
+      "question": "What's your take on moral relativism?",
+      "answer": "Some degree of cultural context matters but certain ethical principles seem truly universal."
+    },
+    {
+      "id": 385,
+      "question": "What's your opinion on the double-entry bookkeeping system?",
+      "answer": "It's 600 years old and still the foundation of all accounting, Pacioli was a genius."
+    },
+    {
+      "id": 386,
+      "question": "What's your favorite knitting stitch pattern?",
+      "answer": "Brioche stitch creates a thick, reversible fabric that's addictive once you get the rhythm."
+    },
+    {
+      "id": 387,
+      "question": "What's your take on planned obsolescence?",
+      "answer": "It's environmentally destructive and the right-to-repair movement is one of the most important consumer causes."
+    },
+    {
+      "id": 388,
+      "question": "What's your opinion on syncopation in music?",
+      "answer": "Off-beat emphasis is what makes jazz, funk, and Latin music physically impossible to sit still to."
+    },
+    {
+      "id": 389,
+      "question": "What's your favorite permaculture principle?",
+      "answer": "Observe and interact, spending a full year watching your land before changing anything pays dividends."
+    },
+    {
+      "id": 390,
+      "question": "What's your take on noise-canceling technology?",
+      "answer": "Active noise cancellation using destructive interference is one of the best applications of wave physics."
+    },
+    {
+      "id": 391,
+      "question": "What's your opinion on the precautionary principle?",
+      "answer": "Better to be cautious with irreversible changes to ecosystems, even without perfect evidence."
+    },
+    {
+      "id": 392,
+      "question": "What's your favorite type of joint in metalwork?",
+      "answer": "TIG welding stainless steel with argon shielding produces the cleanest, strongest joints."
+    },
+    {
+      "id": 393,
+      "question": "What's your take on the problem of induction?",
+      "answer": "Hume showed we can't logically justify induction, yet science works, which is philosophy's best puzzle."
+    },
+    {
+      "id": 394,
+      "question": "What's your opinion on sensory deprivation tanks?",
+      "answer": "Floating for an hour resets your nervous system in a way that nothing else replicates."
+    },
+    {
+      "id": 395,
+      "question": "What's your favorite application of control theory?",
+      "answer": "PID controllers in everything from thermostats to drone stability, simple math solving real problems."
+    },
+    {
+      "id": 396,
+      "question": "What's your take on intellectual property in the digital age?",
+      "answer": "Current copyright law is broken, 70 years after death is absurd for digital content."
+    },
+    {
+      "id": 397,
+      "question": "What's your opinion on the Dunning-Kruger effect?",
+      "answer": "The original study is more nuanced than the meme, but overconfidence in beginners is very real."
+    },
+    {
+      "id": 398,
+      "question": "What's your favorite type of stitch in embroidery?",
+      "answer": "French knots, they're fiddly but they add perfect texture and dimension to any piece."
+    },
+    {
+      "id": 399,
+      "question": "What's your take on technological determinism?",
+      "answer": "Technology shapes society but doesn't determine it, human agency still matters."
+    },
+    {
+      "id": 400,
+      "question": "What's your opinion on the ergodic hypothesis?",
+      "answer": "In practice, most systems we care about aren't truly ergodic, which makes statistical mechanics harder."
+    },
+    {
+      "id": 401,
+      "question": "What's your favorite traditional preservation method?",
+      "answer": "Smoking fish over apple wood, the flavor and shelf life extension are both excellent."
+    },
+    {
+      "id": 402,
+      "question": "What's your take on moral luck?",
+      "answer": "It's troubling that we judge people differently based on outcomes they can't control."
+    },
+    {
+      "id": 403,
+      "question": "What's your opinion on passive house design?",
+      "answer": "Triple glazing, airtight envelopes, and heat recovery ventilation can cut heating costs by 90%."
+    },
+    {
+      "id": 404,
+      "question": "What's your favorite application of game theory?",
+      "answer": "The prisoner's dilemma explains so much about cooperation and defection in everyday life."
+    },
+    {
+      "id": 405,
+      "question": "What's your take on the replication crisis in science?",
+      "answer": "It's a necessary correction, science that doesn't replicate isn't science."
+    },
+    {
+      "id": 406,
+      "question": "What's your opinion on circadian rhythm science?",
+      "answer": "Light exposure timing matters more than sleep duration, and most people get it wrong."
+    },
+    {
+      "id": 407,
+      "question": "What's your favorite geological formation?",
+      "answer": "Columnar basalt like Giant's Causeway, hexagonal rock columns formed by cooling lava."
+    },
+    {
+      "id": 408,
+      "question": "What's your take on the demarcation problem in philosophy of science?",
+      "answer": "Falsifiability is a good start but it's not sufficient, science is messier than Popper suggested."
+    },
+    {
+      "id": 409,
+      "question": "What's your opinion on traditional timber framing?",
+      "answer": "Mortise and tenon joints held with wooden pegs have lasted centuries, modern construction should learn from this."
+    },
+    {
+      "id": 410,
+      "question": "What's your favorite cognitive science finding?",
+      "answer": "Embodied cognition, the idea that thinking isn't just in the brain but involves the whole body."
+    },
+    {
+      "id": 411,
+      "question": "What's your opinion on microdosing psychedelics?",
+      "answer": "The research is still early but the anecdotal reports on creativity and mood are intriguing."
+    },
+    {
+      "id": 412,
+      "question": "What's your favorite type of cloud computing service?",
+      "answer": "Serverless functions for event-driven work, you only pay for what you use and scaling is automatic."
+    },
+    {
+      "id": 413,
+      "question": "What's your take on the trolley problem's relevance to self-driving cars?",
+      "answer": "It forces engineers to encode ethical decisions into algorithms, which is genuinely unprecedented."
+    },
+    {
+      "id": 414,
+      "question": "What's your opinion on raw denim?",
+      "answer": "Wearing raw selvedge and watching the fades develop over months creates jeans that tell your story."
+    },
+    {
+      "id": 415,
+      "question": "What's your favorite mathematical visualization tool?",
+      "answer": "Desmos for quick graphs, Manim for animated explanations, both are indispensable."
+    },
+    {
+      "id": 416,
+      "question": "What's your take on solarpunk as a movement?",
+      "answer": "It's the most optimistic and actionable vision of the future I've encountered."
+    },
+    {
+      "id": 417,
+      "question": "What's your opinion on the attention economy?",
+      "answer": "Our focus is the most valuable resource we have and apps are designed to steal it."
+    },
+    {
+      "id": 418,
+      "question": "What's your favorite type of architectural style?",
+      "answer": "Brutalism, the raw concrete and bold geometry are deeply honest about their materials."
+    },
+    {
+      "id": 419,
+      "question": "What's your take on universal basic income?",
+      "answer": "Pilot programs show it reduces poverty without reducing work ethic, the data is promising."
+    },
+    {
+      "id": 420,
+      "question": "What's your opinion on binaural beats?",
+      "answer": "The science is inconclusive but I find them useful for getting into a focused state."
+    },
+    {
+      "id": 421,
+      "question": "What's your favorite type of stained glass technique?",
+      "answer": "Tiffany copper foil method for detailed work, lead came for larger architectural panels."
+    },
+    {
+      "id": 422,
+      "question": "What's your take on the mere exposure effect?",
+      "answer": "Familiarity breeds preference, which explains why we like songs more after multiple listens."
+    },
+    {
+      "id": 423,
+      "question": "What's your opinion on rewilding projects?",
+      "answer": "Reintroducing keystone species like wolves to Yellowstone shows how ecosystems can recover remarkably."
+    },
+    {
+      "id": 424,
+      "question": "What's your favorite type of leather crafting?",
+      "answer": "Wet-molding leather to create custom knife sheaths, the material becomes whatever shape you need."
+    },
+    {
+      "id": 425,
+      "question": "What's your take on the experience machine thought experiment?",
+      "answer": "Most people wouldn't plug in, which suggests we value authenticity over pure pleasure."
+    },
+    {
+      "id": 426,
+      "question": "What's your opinion on digital gardens?",
+      "answer": "Evolving public notes instead of polished blog posts feels more honest and useful."
+    },
+    {
+      "id": 427,
+      "question": "What's your favorite application of Fourier analysis?",
+      "answer": "Audio equalization, decomposing sound into frequency components and reshaping them."
+    },
+    {
+      "id": 428,
+      "question": "What's your take on the overview effect?",
+      "answer": "Astronauts describe seeing Earth from space as transformative, I think VR could democratize this."
+    },
+    {
+      "id": 429,
+      "question": "What's your opinion on slow fashion?",
+      "answer": "Buying fewer, higher quality garments is better for the planet and your wallet long-term."
+    },
+    {
+      "id": 430,
+      "question": "What's your favorite method for sharpening chisels?",
+      "answer": "Scary sharp method with progressively finer sandpaper on glass, it's cheap and effective."
+    },
+    {
+      "id": 431,
+      "question": "What's your take on the streetlight effect in research?",
+      "answer": "We study what's easy to measure rather than what matters, and it distorts entire fields."
+    },
+    {
+      "id": 432,
+      "question": "What's your opinion on citizen science projects?",
+      "answer": "eBird and Galaxy Zoo show that amateurs can contribute meaningfully to real research."
+    },
+    {
+      "id": 433,
+      "question": "What's your favorite type of sundial?",
+      "answer": "Equatorial sundials, the hour lines are evenly spaced which makes them the most accurate."
+    },
+    {
+      "id": 434,
+      "question": "What's your take on deep time?",
+      "answer": "Thinking in millions of years makes human concerns feel small but our potential feel vast."
+    },
+    {
+      "id": 435,
+      "question": "What's your opinion on biomimetic robotics?",
+      "answer": "Boston Dynamics' robots move like animals because evolution already optimized for locomotion."
+    },
+    {
+      "id": 436,
+      "question": "What's your favorite paradox in economics?",
+      "answer": "The diamond-water paradox, water is more useful but diamonds are more expensive because of marginal utility."
+    },
+    {
+      "id": 437,
+      "question": "What's your take on the tragedy of the commons?",
+      "answer": "It's the best framework for understanding climate change and why individual action isn't enough."
+    },
+    {
+      "id": 438,
+      "question": "What's your opinion on sensory gardens for therapy?",
+      "answer": "Designing gardens around all five senses helps with anxiety, dementia, and rehabilitation."
+    },
+    {
+      "id": 439,
+      "question": "What's your favorite application of Markov chains?",
+      "answer": "Text generation from Markov chains was my first AI project and it taught me the fundamentals."
+    },
+    {
+      "id": 440,
+      "question": "What's your take on technological unemployment?",
+      "answer": "AI will displace jobs faster than new ones are created in the short term, and we need to prepare."
+    },
+    {
+      "id": 441,
+      "question": "What's your opinion on forest bathing (shinrin-yoku)?",
+      "answer": "The Japanese practice of simply being present in a forest measurably reduces cortisol levels."
+    },
+    {
+      "id": 442,
+      "question": "What's your favorite type of traditional dance?",
+      "answer": "Argentine tango, the connection between partners and the musicality is unmatched."
+    },
+    {
+      "id": 443,
+      "question": "What's your take on the Cobra effect?",
+      "answer": "Incentives that backfire are everywhere in policy, it's a lesson in second-order thinking."
+    },
+    {
+      "id": 444,
+      "question": "What's your opinion on cyanotype photography?",
+      "answer": "Sun printing with iron salts creates stunning blue-and-white images from any negative."
+    },
+    {
+      "id": 445,
+      "question": "What's your favorite type of puzzle?",
+      "answer": "Cryptic crosswords, they're a completely different skill from standard crosswords and deeply satisfying."
+    },
+    {
+      "id": 446,
+      "question": "What's your take on the McNamara fallacy?",
+      "answer": "Measuring only what's quantifiable and ignoring the rest leads to terrible decisions."
+    },
+    {
+      "id": 447,
+      "question": "What's your opinion on handmade paper?",
+      "answer": "Pulling a sheet of cotton rag paper from a mould is one of those crafts that connects you to history."
+    },
+    {
+      "id": 448,
+      "question": "What's your favorite application of spectroscopy?",
+      "answer": "Astronomers determining star composition from light alone is one of science's most powerful tricks."
+    },
+    {
+      "id": 449,
+      "question": "What's your take on the Overton window?",
+      "answer": "Understanding what ideas are politically acceptable at any moment explains shifts in public discourse."
+    },
+    {
+      "id": 450,
+      "question": "What's your opinion on wabi-sabi aesthetics?",
+      "answer": "Finding beauty in imperfection and impermanence changed how I approach design and life."
+    },
+    {
+      "id": 451,
+      "question": "What's your favorite type of traditional textile?",
+      "answer": "Ikat weaving, the dye-resist technique creates beautifully blurred patterns unique to each piece."
+    },
+    {
+      "id": 452,
+      "question": "What's your take on the map-territory relation?",
+      "answer": "The map is not the territory, all models are simplifications and we forget that at our peril."
+    },
+    {
+      "id": 453,
+      "question": "What's your opinion on guerrilla gardening?",
+      "answer": "Planting flowers in neglected urban spaces is a small act of resistance that beautifies communities."
+    },
+    {
+      "id": 454,
+      "question": "What's your favorite historical mathematical manuscript?",
+      "answer": "Ramanujan's notebooks, his intuition produced results that took decades for others to prove."
+    },
+    {
+      "id": 455,
+      "question": "What's your take on the paradox of tolerance?",
+      "answer": "A tolerant society must be intolerant of intolerance, Popper got this exactly right."
+    },
+    {
+      "id": 456,
+      "question": "What's your opinion on dry stone walling?",
+      "answer": "Building walls without mortar that last centuries is engineering through pure craft."
+    },
+    {
+      "id": 457,
+      "question": "What's your favorite type of traditional medicine practice?",
+      "answer": "Acupuncture for chronic pain, the mechanisms aren't fully understood but the clinical evidence is real."
+    },
+    {
+      "id": 458,
+      "question": "What's your take on the Anna Karenina principle?",
+      "answer": "Happy families are alike but every unhappy family is unhappy in its own way applies to so many systems."
+    },
+    {
+      "id": 459,
+      "question": "What's your opinion on acoustic ecology?",
+      "answer": "Paying attention to soundscapes and protecting natural quiet zones is an undervalued conservation goal."
+    },
+    {
+      "id": 460,
+      "question": "What's your favorite type of moss for terrariums?",
+      "answer": "Sheet moss for ground cover and mood moss for texture, together they create a miniature forest."
+    },
+    {
+      "id": 461,
+      "question": "What's your take on the Lindy effect?",
+      "answer": "Things that have survived a long time will likely survive proportionally longer, which guides my reading choices."
+    },
+    {
+      "id": 462,
+      "question": "What's your opinion on Japanese woodblock printing (ukiyo-e)?",
+      "answer": "The registration system for multi-color prints is ingenious and Hokusai's Great Wave is iconic for a reason."
+    },
+    {
+      "id": 463,
+      "question": "What's your favorite type of renewable energy technology?",
+      "answer": "Offshore wind turbines, the engineering challenges are enormous but the energy output is massive."
+    },
+    {
+      "id": 464,
+      "question": "What's your take on the Easterlin paradox?",
+      "answer": "Beyond a threshold, more income doesn't increase happiness, which suggests we chase the wrong metrics."
+    },
+    {
+      "id": 465,
+      "question": "What's your opinion on biophilic design in architecture?",
+      "answer": "Integrating natural elements into buildings measurably improves occupant well-being and productivity."
+    },
+    {
+      "id": 466,
+      "question": "What's your favorite type of traditional pottery technique?",
+      "answer": "Raku firing, pulling glowing pieces from the kiln and reducing them in combustible material creates unrepeatable glazes."
+    },
+    {
+      "id": 467,
+      "question": "What's your take on the Jevons paradox?",
+      "answer": "Making resource use more efficient often increases total consumption, which is counterintuitive and important for climate policy."
+    },
+    {
+      "id": 468,
+      "question": "What's your opinion on amateur astronomy?",
+      "answer": "A good pair of binoculars and a star chart can show you Jupiter's moons from your backyard."
+    },
+    {
+      "id": 469,
+      "question": "What's your favorite type of hand tool?",
+      "answer": "A well-tuned hand plane, the whisper of a thin shaving curling off the blade is deeply satisfying."
+    },
+    {
+      "id": 470,
+      "question": "What's your take on the peak-end rule in psychology?",
+      "answer": "We judge experiences by their peak intensity and ending, not the average, which has huge UX implications."
+    },
+    {
+      "id": 471,
+      "question": "What's your opinion on food preservation through lacto-fermentation?",
+      "answer": "Sauerkraut, kimchi, and pickles are all the same basic technique and they transform vegetables into something magical."
+    },
+    {
+      "id": 472,
+      "question": "What's your favorite obscure programming concept?",
+      "answer": "Monads, once you understand them you see the pattern everywhere from error handling to async."
+    },
+    {
+      "id": 473,
+      "question": "What's your take on the paradox of hedonism?",
+      "answer": "Directly pursuing pleasure makes it harder to achieve, the best experiences come as byproducts of meaningful activity."
+    },
+    {
+      "id": 474,
+      "question": "What's your opinion on traditional Japanese paper (washi)?",
+      "answer": "Kozo fiber washi is strong enough to use for bookbinding and beautiful enough to frame."
+    },
+    {
+      "id": 475,
+      "question": "What's your favorite type of scientific instrument?",
+      "answer": "The electron microscope, seeing individual atoms still feels like science fiction made real."
+    },
+    {
+      "id": 476,
+      "question": "What's your take on Chesterton's fence?",
+      "answer": "Before removing a rule or institution, understand why it was put there in the first place."
+    },
+    {
+      "id": 477,
+      "question": "What's your opinion on phenology and nature journaling?",
+      "answer": "Recording when plants bloom and birds arrive year after year reveals climate change in your own backyard."
+    },
+    {
+      "id": 478,
+      "question": "What's your favorite type of historical map?",
+      "answer": "Portolan charts from medieval sailors, the accuracy of coastlines drawn from dead reckoning is remarkable."
+    },
+    {
+      "id": 479,
+      "question": "What's your take on the sunk cost fallacy?",
+      "answer": "Learning to walk away from bad investments of time and money was one of the hardest but best skills I developed."
+    },
+    {
+      "id": 480,
+      "question": "What's your opinion on traditional dyeing with cochineal?",
+      "answer": "The vibrant red from crushed insects has been used for centuries and the color is absolutely stunning."
+    },
+    {
+      "id": 481,
+      "question": "What's your favorite type of optical illusion?",
+      "answer": "The Necker cube, the way your brain flips between two interpretations demonstrates perceptual ambiguity."
+    },
+    {
+      "id": 482,
+      "question": "What's your take on the Streisand effect?",
+      "answer": "Trying to suppress information online almost always amplifies it, which should inform every PR strategy."
+    },
+    {
+      "id": 483,
+      "question": "What's your opinion on microbial terroir in food production?",
+      "answer": "The specific microbes in a region's air and water give cheese, wine, and bread their unique character."
+    },
+    {
+      "id": 484,
+      "question": "What's your favorite theorem in probability?",
+      "answer": "Bayes' theorem, updating beliefs with new evidence is the foundation of rational thinking."
+    },
+    {
+      "id": 485,
+      "question": "What's your take on the curse of knowledge?",
+      "answer": "Once you know something, it's nearly impossible to imagine not knowing it, which makes teaching hard."
+    },
+    {
+      "id": 486,
+      "question": "What's your opinion on digital minimalism?",
+      "answer": "Cal Newport's framework of being intentional about technology use improved my focus and well-being."
+    },
+    {
+      "id": 487,
+      "question": "What's your favorite type of weather phenomenon?",
+      "answer": "Mammatus clouds, the bubble-like formations before storms look like the sky is upside down."
+    },
+    {
+      "id": 488,
+      "question": "What's your take on Goodhart's law?",
+      "answer": "When a measure becomes a target, it ceases to be a good measure, this explains most institutional dysfunction."
+    },
+    {
+      "id": 489,
+      "question": "What's your opinion on traditional fermented dairy?",
+      "answer": "Kefir grains passed down through generations produce a probiotic drink that commercial yogurt can't match."
+    },
+    {
+      "id": 490,
+      "question": "What's your favorite thought experiment in philosophy?",
+      "answer": "The veil of ignorance, designing society without knowing your position in it leads to fairer systems."
+    },
+    {
+      "id": 491,
+      "question": "What's your take on the availability heuristic?",
+      "answer": "We overestimate the probability of events we can easily remember, which distorts risk perception."
+    },
+    {
+      "id": 492,
+      "question": "What's your opinion on parametric design in architecture?",
+      "answer": "Using algorithms to generate building forms creates structures that would be impossible to design by hand."
+    },
+    {
+      "id": 493,
+      "question": "What's your favorite type of folk music tradition?",
+      "answer": "Appalachian old-time fiddle music, the modal tunings and driving rhythm are infectious."
+    },
+    {
+      "id": 494,
+      "question": "What's your take on the cobra effect in software engineering?",
+      "answer": "Paying developers by lines of code written is the perfect example of incentivizing the wrong metric."
+    },
+    {
+      "id": 495,
+      "question": "What's your opinion on biomineralization?",
+      "answer": "Organisms building shells, bones, and teeth from dissolved minerals is nanotechnology that nature perfected."
+    },
+    {
+      "id": 496,
+      "question": "What's your favorite example of mathematical art?",
+      "answer": "Escher's tessellations, the way he translated hyperbolic geometry into visual art is brilliant."
+    },
+    {
+      "id": 497,
+      "question": "What's your take on the framing effect in decision making?",
+      "answer": "Presenting the same information differently changes choices, which has massive implications for policy design."
+    },
+    {
+      "id": 498,
+      "question": "What's your opinion on heritage grain cultivation?",
+      "answer": "Ancient wheat varieties like emmer and einkorn taste better and are more nutritious than modern cultivars."
+    },
+    {
+      "id": 499,
+      "question": "What's your favorite type of celestial event?",
+      "answer": "Total solar eclipses, experiencing totality is genuinely one of the most profound things a human can witness."
+    },
+    {
+      "id": 500,
+      "question": "What's your take on the principle of charity in argumentation?",
+      "answer": "Always interpret someone's argument in its strongest form before responding, it leads to better discourse."
+    },
+    {
+      "id": 501,
+      "question": "What's your opinion on traditional boat building?",
+      "answer": "Clinker-built boats with overlapping planks are beautiful, seaworthy, and a testament to Viking engineering."
+    },
+    {
+      "id": 502,
+      "question": "What's your favorite type of philosophical razor?",
+      "answer": "Occam's razor, the simplest explanation that fits the evidence is usually correct."
+    },
+    {
+      "id": 503,
+      "question": "What's your take on the spotlight effect?",
+      "answer": "We think people notice our mistakes far more than they actually do, which should liberate us."
+    },
+    {
+      "id": 504,
+      "question": "What's your opinion on agroforestry?",
+      "answer": "Integrating trees with crops mimics natural ecosystems and produces more per acre than monoculture."
+    },
+    {
+      "id": 505,
+      "question": "What's your favorite example of mathematical recreation?",
+      "answer": "The four-color theorem, it was the first major theorem proved with computer assistance and sparked debate."
+    },
+    {
+      "id": 506,
+      "question": "What's your take on loss aversion in behavioral economics?",
+      "answer": "Losing $100 hurts twice as much as gaining $100 feels good, and this asymmetry shapes most decisions."
+    },
+    {
+      "id": 507,
+      "question": "What's your opinion on traditional glassblowing?",
+      "answer": "Watching a gather of molten glass become a vessel in minutes is hypnotic and the skill ceiling is infinite."
+    },
+    {
+      "id": 508,
+      "question": "What's your favorite type of planetary feature?",
+      "answer": "Saturn's hexagonal storm at its north pole, a geometric weather pattern on a gas giant is surreal."
+    },
+    {
+      "id": 509,
+      "question": "What's your take on the doorway effect on memory?",
+      "answer": "Walking through doorways causes forgetting because our brains segment experience by location."
+    },
+    {
+      "id": 510,
+      "question": "What's your opinion on craftsman-style architecture?",
+      "answer": "Exposed joinery, natural materials, and handmade details create homes that feel alive and honest."
+    },
+    {
+      "id": 511,
+      "question": "What's your favorite type of mathematical proof style?",
+      "answer": "Visual proofs, a well-drawn diagram can make a theorem obvious in ways algebra never could."
+    },
+    {
+      "id": 512,
+      "question": "What's your take on the backfire effect?",
+      "answer": "Presenting evidence against someone's beliefs can make them hold those beliefs more strongly, which complicates everything."
+    },
+    {
+      "id": 513,
+      "question": "What's your opinion on natural building with cob?",
+      "answer": "Sculpting walls from earth, sand, and straw creates organic forms that no other building method allows."
+    },
+    {
+      "id": 514,
+      "question": "What's your favorite application of differential equations?",
+      "answer": "Modeling population dynamics with Lotka-Volterra equations shows how predator and prey populations oscillate."
+    },
+    {
+      "id": 515,
+      "question": "What's your take on the status quo bias?",
+      "answer": "We prefer things to stay the same even when change would benefit us, and recognizing this helps with decisions."
+    },
+    {
+      "id": 516,
+      "question": "What's your opinion on heritage seed libraries?",
+      "answer": "Community seed banks preserve genetic diversity that industrial agriculture is rapidly destroying."
+    },
+    {
+      "id": 517,
+      "question": "What's your favorite type of ancient technology?",
+      "answer": "The Antikythera mechanism, an analog computer from 100 BC that predicted eclipses and planetary positions."
+    },
+    {
+      "id": 518,
+      "question": "What's your take on Weber's law of just noticeable difference?",
+      "answer": "The fact that perception scales logarithmically explains everything from audio mixing to pricing psychology."
+    },
+    {
+      "id": 519,
+      "question": "What's your opinion on traditional charcoal making?",
+      "answer": "Japanese binch\u014dtan charcoal burns cleaner and longer than any briquette, the firing process takes days."
+    },
+    {
+      "id": 520,
+      "question": "What's your favorite type of scientific visualization?",
+      "answer": "Phase space diagrams, seeing a system's entire behavior space in one plot reveals structure that equations hide."
+    },
+    {
+      "id": 521,
+      "question": "What's your take on the IKEA effect?",
+      "answer": "We overvalue things we build ourselves, which explains why participatory design creates more engaged users."
+    },
+    {
+      "id": 522,
+      "question": "What's your opinion on acoustic guitar building?",
+      "answer": "Bending sides, carving braces, and choosing tonewoods results in an instrument that sounds like nothing else."
+    },
+    {
+      "id": 523,
+      "question": "What's your favorite extinct animal?",
+      "answer": "Thylacine, the Tasmanian tiger's convergent evolution with canines from a marsupial lineage is remarkable."
+    },
+    {
+      "id": 524,
+      "question": "What's your take on counterfactual thinking?",
+      "answer": "Imagining how things could have been different is essential for learning but dangerous for happiness."
+    },
+    {
+      "id": 525,
+      "question": "What's your opinion on Persian carpet weaving?",
+      "answer": "A single handwoven carpet can take years and contain millions of knots, it's art at the scale of patience."
+    },
+    {
+      "id": 526,
+      "question": "What's your favorite type of symbiotic relationship?",
+      "answer": "Mycorrhizal networks between trees, the wood wide web of fungal connections sharing nutrients underground."
+    },
+    {
+      "id": 527,
+      "question": "What's your take on the narrative fallacy?",
+      "answer": "We impose stories on random events to make sense of them, which helps psychologically but distorts analysis."
+    },
+    {
+      "id": 528,
+      "question": "What's your opinion on earth-sheltered architecture?",
+      "answer": "Building into hillsides provides natural insulation, storm protection, and a minimal visual footprint."
+    },
+    {
+      "id": 529,
+      "question": "What's your favorite type of mathematical space?",
+      "answer": "Hyperbolic space, where parallel lines diverge and triangles have angles summing to less than 180 degrees."
+    },
+    {
+      "id": 530,
+      "question": "What's your take on anchoring in negotiations?",
+      "answer": "The first number on the table disproportionately influences the outcome, which is why I always name my price first."
+    },
+    {
+      "id": 531,
+      "question": "What's your opinion on traditional salt harvesting?",
+      "answer": "Solar evaporation salt pans produce fleur de sel that tastes of the sea in a way industrial salt never will."
+    },
+    {
+      "id": 532,
+      "question": "What's your favorite type of migratory pattern?",
+      "answer": "Arctic terns flying pole to pole, experiencing two summers per year and the most daylight of any creature."
+    },
+    {
+      "id": 533,
+      "question": "What's your take on the Pygmalion effect?",
+      "answer": "Higher expectations literally produce better performance, which transforms how I think about teaching and management."
+    },
+    {
+      "id": 534,
+      "question": "What's your opinion on hand-forged blacksmithing?",
+      "answer": "Shaping hot metal with a hammer connects you to a craft that's essentially unchanged for thousands of years."
+    },
+    {
+      "id": 535,
+      "question": "What's your favorite mathematical conjecture?",
+      "answer": "The twin prime conjecture, that there are infinitely many primes differing by 2, is simple to state and deeply mysterious."
+    },
+    {
+      "id": 536,
+      "question": "What's your take on the bystander effect?",
+      "answer": "Diffusion of responsibility in groups means you should always point to a specific person when asking for help."
+    },
+    {
+      "id": 537,
+      "question": "What's your opinion on permaculture food forests?",
+      "answer": "Layered planting that mimics forest ecology can produce food with minimal maintenance once established."
+    },
+    {
+      "id": 538,
+      "question": "What's your favorite type of historical preservation technique?",
+      "answer": "Dendrochronology, dating wooden structures by tree ring patterns gives exact years without destroying the artifact."
+    },
+    {
+      "id": 539,
+      "question": "What's your take on the decoy effect in marketing?",
+      "answer": "Adding a third inferior option makes one of the original two seem more attractive, and it works every time."
+    },
+    {
+      "id": 540,
+      "question": "What's your opinion on Japanese fish printing (gyotaku)?",
+      "answer": "Inking an actual fish and pressing it to paper creates scientific records that are also beautiful art."
+    },
+    {
+      "id": 541,
+      "question": "What's your favorite type of wave phenomenon?",
+      "answer": "Standing waves on a Chladni plate, sand forming geometric patterns from vibration is mesmerizing."
+    },
+    {
+      "id": 542,
+      "question": "What's your take on the endowment effect?",
+      "answer": "Owning something makes us value it more, which explains why decluttering is psychologically difficult."
+    },
+    {
+      "id": 543,
+      "question": "What's your opinion on rocket mass heaters?",
+      "answer": "Burning wood at extremely high temperatures with thermal mass storage is the most efficient wood heating system."
+    }
+  ]
+}

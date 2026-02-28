@@ -18,13 +18,33 @@ def sentence_to_vector(sentence: str) -> np.ndarray:
 #     print("Vector shape:", vec.shape)
 #     print("First 5 values:", vec[:5])
 
-def to_matrix(strings: list[str]) -> np.ndarray:
+def to_matrix(strings: list[str], batch_size: int = 32) -> np.ndarray:
     """
     Convert a list of strings into a matrix of vectors.
-    Each row corresponds to one string.
+    Each row corresponds to one string. Uses batch encoding for efficiency.
     """
-    vectors = [sentence_to_vector(s) for s in strings]
-    return np.vstack(vectors)
+    if not strings:
+        return np.array([]).reshape(0, 384)
+    embeddings = model.encode(strings, batch_size=batch_size, show_progress_bar=False)
+    return np.array(embeddings)
+
+
+def vectorize_pair(
+    questions_1: list[str], answers_1: list[str],
+    questions_2: list[str], answers_2: list[str],
+) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    """
+    Vectorize two user pairs for training. Returns (Q1, A1, Q2, A2) as (10, 384) arrays.
+    Use to_matrix internally; call with 10 questions and 10 answers per user.
+    """
+    all_strings = questions_1 + answers_1 + questions_2 + answers_2
+    all_embeddings = model.encode(all_strings, batch_size=64, show_progress_bar=False)
+    n = len(questions_1)
+    Q1 = np.array(all_embeddings[0:n])
+    A1 = np.array(all_embeddings[n : 2 * n])
+    Q2 = np.array(all_embeddings[2 * n : 3 * n])
+    A2 = np.array(all_embeddings[3 * n : 4 * n])
+    return Q1, A1, Q2, A2
 
 if __name__ == "__main__":
     responses = [
