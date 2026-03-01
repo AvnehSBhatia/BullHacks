@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { RoomState } from "@/lib/matching";
-import { ArrowRight, ShieldCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight, ShieldCheck } from "lucide-react";
 
 const RULES = [
     "No advice unless explicitly asked.",
@@ -57,6 +57,16 @@ export default function OnboardingPage() {
     return (
         <div className="min-h-screen bg-[var(--color-background)] flex flex-col items-center justify-center p-6 sm:p-12 font-sans selection:bg-accent/30">
             <div className="max-w-xl w-full flex flex-col items-center text-center">
+                <div className="w-full mb-8 flex justify-start">
+                    <button
+                        type="button"
+                        onClick={() => router.push("/matching")}
+                        className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors gap-2 text-sm font-medium"
+                    >
+                        <ArrowLeft className="w-4 h-4" />
+                        Back to matching
+                    </button>
+                </div>
 
                 <div className="w-16 h-16 rounded-full bg-card flex items-center justify-center mb-8 ring-1 ring-border shadow-sm">
                     <ShieldCheck className="w-8 h-8 text-foreground" />

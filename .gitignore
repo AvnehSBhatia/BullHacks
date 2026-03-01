@@ -14,5 +14,3 @@ emo/.next
 ./emo/tsconfig.node.json
 ./emo/tsconfig.app.json
 ./emo/tsconfig.base.json
-./emo/__pycache__
-./emo/node_modules

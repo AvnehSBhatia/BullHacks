@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { Send, Ear, User as UserIcon } from "lucide-react";
+import { Send, Ear, User as UserIcon, ArrowLeft } from "lucide-react";
 import { PHASES, PhaseConfig, SHARING_NUDGES } from "@/lib/phases";
 import { scanMessage, SafetyScanResult } from "@/lib/safety";
 import { RoomState, UserVector } from "@/lib/matching";
@@ -21,6 +21,7 @@ type Message = {
 
 export default function RoomPage() {
     const params = useParams();
+    const router = useRouter();
     const roomId = params.id as string;
 
     const [room, setRoom] = useState<RoomState | null>(null);
@@ -217,7 +218,15 @@ export default function RoomPage() {
 
                 {/* TOP BAR / PHASE INDICATOR */}
                 <header className="h-14 border-b border-border bg-background/80 backdrop-blur-md flex items-center justify-between px-4 sm:px-6 sticky top-0 z-10">
-                    <div className="flex items-center gap-4 w-full max-w-2xl mx-auto">
+                    <div className="flex items-center justify-between gap-4 w-full max-w-3xl mx-auto">
+                        <button
+                            type="button"
+                            onClick={() => router.push("/matching")}
+                            className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors whitespace-nowrap"
+                        >
+                            <ArrowLeft className="w-4 h-4" />
+                            Back to matching
+                        </button>
                         <div className="flex-1 flex gap-1 h-1.5">
                             {PHASES.map((p, i) => (
                                 <div key={p.id} className="h-full flex-1 rounded-full overflow-hidden bg-muted relative">
