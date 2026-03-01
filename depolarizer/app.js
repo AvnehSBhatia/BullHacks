@@ -129,9 +129,13 @@ async function initQuiz() {
     state.quiz.q11 = data.q11 || {
       question: 'How would you describe your overall political stance?',
       options: [
-        { id: 'progressive', label: 'Progressive / Left-leaning' },
-        { id: 'conservative', label: 'Conservative / Right-leaning' },
-        { id: 'moderate', label: 'Moderate / Centrist' },
+        { id: 'far-left', label: 'Far-left' },
+        { id: 'left-leaning', label: 'Left-leaning' },
+        { id: 'moderate-left', label: 'Moderate-left' },
+        { id: 'centrist', label: 'Centrist' },
+        { id: 'moderate-right', label: 'Moderate-right' },
+        { id: 'right-leaning', label: 'Right-leaning' },
+        { id: 'far-right', label: 'Far-right' },
       ],
     };
     // Add Q11 as virtual question
@@ -202,7 +206,7 @@ async function initQuiz() {
   async function finishQuiz() {
     const questions = state.quiz.questions.slice(0, 10).map(q => q.text);
     const answers = state.quiz.textAnswers.map(a => (a && a.trim()) || "I'm not sure.");
-    const politicalStance = state.quiz.answers[10] || 'moderate';
+    const politicalStance = state.quiz.answers[10] || 'centrist';
 
     btnQuizNext.disabled = true;
     document.getElementById('quiz-next-label').textContent = 'Building profile...';

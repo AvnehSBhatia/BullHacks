@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { User, ShieldAlert, History, Settings, ArrowLeft, Edit2, LogOut } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const MOCK_USER = {
     name: "Alex",
@@ -20,9 +21,40 @@ const SCORE_HISTORY = [
     { id: 3, action: "Account creation baseline", change: "+85", date: "2 weeks ago" },
 ];
 
+const STORAGE_KEYS = {
+    USER_ID: "depolarizer_user_id",
+    VECTOR: "depolarizer_vector",
+    STANCE: "depolarizer_political_stance",
+    CITY: "depolarizer_city",
+};
+
+const getStanceColor = (stance: string | null) => {
+    const normalized = (stance || "").toLowerCase();
+    if (normalized.includes("left") || normalized === "progressive") return "#2563EB";
+    if (normalized.includes("right") || normalized === "conservative") return "#DC2626";
+    return "#8B5CF6";
+};
+
 export default function ProfilePage() {
+    const router = useRouter();
     const [isEditing, setIsEditing] = useState(false);
     const [bio, setBio] = useState(MOCK_USER.bio);
+    const [stanceColor, setStanceColor] = useState("#8B5CF6");
+    const [politicalStance, setPoliticalStance] = useState<string | null>(null);
+
+    useEffect(() => {
+        const storedStance = localStorage.getItem(STORAGE_KEYS.STANCE);
+        setStanceColor(getStanceColor(storedStance));
+        setPoliticalStance(storedStance);
+    }, []);
+
+    const handleSignOut = () => {
+        localStorage.removeItem(STORAGE_KEYS.USER_ID);
+        localStorage.removeItem(STORAGE_KEYS.VECTOR);
+        localStorage.removeItem(STORAGE_KEYS.STANCE);
+        localStorage.removeItem(STORAGE_KEYS.CITY);
+        router.push("/");
+    };
 
     return (
         <div className="min-h-screen bg-[#F8FAFC] flex selection:bg-bridge-blue/20">
@@ -46,7 +78,10 @@ export default function ProfilePage() {
                     <Link href="/profile" className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-bridge-blue/5 text-bridge-blue font-medium transition-colors">
                         <User className="w-5 h-5" /> Profile Identity
                     </Link>
-                    <button className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-bridge-slate/70 hover:bg-bridge-slate/5 hover:text-bridge-slate font-medium transition-colors w-full text-left mt-auto">
+                    <button
+                        onClick={handleSignOut}
+                        className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-bridge-slate/70 hover:bg-bridge-slate/5 hover:text-bridge-slate font-medium transition-colors w-full text-left mt-auto"
+                    >
                         <LogOut className="w-5 h-5" /> Sign Out
                     </button>
                 </div>
@@ -70,12 +105,25 @@ export default function ProfilePage() {
                         <section className="bg-white rounded-3xl p-6 sm:p-8 border border-bridge-slate/10 shadow-sm relative">
                             <div className="flex justify-between items-start mb-6">
                                 <div className="flex items-center gap-4">
-                                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-bridge-blue/20 to-bridge-blue/5 flex items-center justify-center shrink-0">
+                                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-bridge-blue/20 to-bridge-blue/5 flex items-center justify-center shrink-0 relative">
                                         <User className="w-10 h-10 text-bridge-blue opacity-50" />
+                                        <span
+                                            className="absolute -bottom-1.5 -right-1.5 w-5 h-5 rounded-full border-2 border-white"
+                                            style={{ backgroundColor: stanceColor }}
+                                            title="Political stance color"
+                                        />
                                     </div>
                                     <div>
                                         <h2 className="text-2xl font-bold text-bridge-slate">{MOCK_USER.name}</h2>
                                         <p className="text-sm font-medium text-bridge-slate/60">{MOCK_USER.commStyle} Communicator</p>
+                                        {politicalStance && (
+                                            <span
+                                                className="inline-block mt-2 text-xs font-semibold px-2.5 py-1 rounded-full"
+                                                style={{ backgroundColor: `${stanceColor}20`, color: stanceColor }}
+                                            >
+                                                {politicalStance.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join("-")}
+                                            </span>
+                                        )}
                                     </div>
                                 </div>
                                 <button

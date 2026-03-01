@@ -37,7 +37,20 @@ def _cors(resp):
     return resp
 
 SIMILARITY_THRESHOLD = 75.0  # Must be >= 75% similar to match
-POLITICAL_STANCES = ["progressive", "conservative", "moderate"]
+POLITICAL_STANCES = [
+    "far-left",
+    "left-leaning",
+    "moderate-left",
+    "centrist",
+    "moderate-right",
+    "right-leaning",
+    "far-right",
+    # Backward compatibility with older saved values
+    "progressive",
+    "conservative",
+    "moderate",
+]
+STANCE_ERROR_MSG = f"political_stance required ({', '.join(POLITICAL_STANCES[:7])})"
 
 GLOBAL_QUESTIONS = [
     "Do you believe the government should take an active role in solving social problems, or should individuals and private organizations handle them?",
@@ -50,9 +63,13 @@ GLOBAL_QUESTIONS = [
 Q11_POLITICAL_STANCE = {
     "question": "How would you describe your overall political stance?",
     "options": [
-        {"id": "progressive", "label": "Progressive / Left-leaning"},
-        {"id": "conservative", "label": "Conservative / Right-leaning"},
-        {"id": "moderate", "label": "Moderate / Centrist"},
+        {"id": "far-left", "label": "Far-left"},
+        {"id": "left-leaning", "label": "Left-leaning"},
+        {"id": "moderate-left", "label": "Moderate-left"},
+        {"id": "centrist", "label": "Centrist"},
+        {"id": "moderate-right", "label": "Moderate-right"},
+        {"id": "right-leaning", "label": "Right-leaning"},
+        {"id": "far-right", "label": "Far-right"},
     ],
 }
 
@@ -170,7 +187,7 @@ def _load_users_from_db(exclude_id: str = None) -> list[dict]:
             "vector": vec,
             "political_stance": row["political_stance"] or "moderate",
             "distance": round(random.uniform(0.5, 12), 1),
-            "emoji": ["🔵", "🔴", "🟣"][random.randint(0, 2)],
+            "emoji": "🔵" if (row["political_stance"] or "").lower() in {"far-left", "left-leaning", "moderate-left", "left", "center-left", "progressive"} else ("🔴" if (row["political_stance"] or "").lower() in {"moderate-right", "right-leaning", "far-right", "right", "center-right", "conservative"} else "🟣"),
         })
     return users
 
@@ -252,10 +269,15 @@ def embed():
 
 @app.route("/api/matches", methods=["GET"])
 def get_matches():
-    """Returns depolarizer matches for existing user. Only users >= 75% similar with differing political stance."""
+    """Returns depolarizer matches for existing user with optional similarity filters."""
     user_id = request.args.get("user_id")
     if not user_id:
         return jsonify({"error": "user_id required"}), 400
+    min_similarity = request.args.get("min_similarity", type=float)
+    max_similarity = request.args.get("max_similarity", type=float)
+    include_same_stance = (request.args.get("include_same_stance", "false") or "").lower() in {"1", "true", "yes"}
+    if min_similarity is None:
+        min_similarity = SIMILARITY_THRESHOLD
     conn = get_db()
     row = conn.execute(
         "SELECT vector, political_stance FROM users WHERE id = ?", (user_id,)
@@ -271,12 +293,17 @@ def get_matches():
     for u in db_users:
         raw_sim = _cosine_sim(user_vec, u["vector"])
         pct = _similarity_to_pct(raw_sim)
-        if pct < SIMILARITY_THRESHOLD:
+        if min_similarity is not None and pct < min_similarity:
             continue
-        if not _stances_differ(user_stance, u["political_stance"]):
+        if max_similarity is not None and pct >= max_similarity:
+            continue
+        if not include_same_stance and not _stances_differ(user_stance, u["political_stance"]):
             continue
         dist_penalty = min(10, u["distance"] * 0.5)
-        match_score = max(SIMILARITY_THRESHOLD, min(100, pct - dist_penalty))
+        if min_similarity >= SIMILARITY_THRESHOLD and max_similarity is None:
+            match_score = max(SIMILARITY_THRESHOLD, min(100, pct - dist_penalty))
+        else:
+            match_score = max(0, min(100, pct - dist_penalty))
         results.append({
             "id": u["id"],
             "emoji": u["emoji"],
@@ -301,7 +328,7 @@ def matches():
     if not data or "vector" not in data:
         return jsonify({"error": "vector required"}), 400
     if "political_stance" not in data or data["political_stance"] not in POLITICAL_STANCES:
-        return jsonify({"error": "political_stance required (progressive, conservative, moderate)"}), 400
+        return jsonify({"error": STANCE_ERROR_MSG}), 400
 
     user_vec = data["vector"]
     political_stance = data["political_stance"].lower()

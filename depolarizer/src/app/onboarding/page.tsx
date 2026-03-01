@@ -19,11 +19,13 @@ const INTERESTS = [
 ];
 
 const POL_LEANS = [
-    { id: "left", label: "Progressive / Left" },
-    { id: "center-left", label: "Center-Left" },
-    { id: "moderate", label: "Moderate / Independent" },
-    { id: "center-right", label: "Center-Right" },
-    { id: "right", label: "Conservative / Right" }
+    { id: "far-left", label: "Far-left" },
+    { id: "left-leaning", label: "Left-leaning" },
+    { id: "moderate-left", label: "Moderate-left" },
+    { id: "centrist", label: "Centrist" },
+    { id: "moderate-right", label: "Moderate-right" },
+    { id: "right-leaning", label: "Right-leaning" },
+    { id: "far-right", label: "Far-right" }
 ];
 
 export default function OnboardingFlow() {

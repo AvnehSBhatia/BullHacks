@@ -11,6 +11,13 @@ const STORAGE_KEYS = {
   STANCE: "depolarizer_political_stance",
 };
 
+const getStanceEmoji = (stance?: string | null) => {
+  const normalized = (stance || "").toLowerCase();
+  if (["far-left", "left-leaning", "moderate-left", "left", "center-left", "progressive"].includes(normalized)) return "🔵";
+  if (["moderate-right", "right-leaning", "far-right", "right", "center-right", "conservative"].includes(normalized)) return "🔴";
+  return "🟣";
+};
+
 export default function Dashboard() {
   const [matches, setMatches] = useState<Match[]>([]);
   const [loading, setLoading] = useState(true);
@@ -20,7 +27,7 @@ export default function Dashboard() {
     const id = typeof window !== "undefined" ? localStorage.getItem(STORAGE_KEYS.USER_ID) : null;
     setUserId(id);
     if (id) {
-      getMatches(id)
+      getMatches(id, { minSimilarity: 0, maxSimilarity: 75, includeSameStance: true })
         .then((d) => setMatches(d.matches || []))
         .catch(() => setMatches([]))
         .finally(() => setLoading(false));
@@ -29,7 +36,6 @@ export default function Dashboard() {
     }
   }, []);
 
-  const topMatch = matches[0];
   const stance = typeof window !== "undefined" ? localStorage.getItem(STORAGE_KEYS.STANCE) : null;
 
   return (
@@ -90,49 +96,54 @@ export default function Dashboard() {
             </div>
           ) : loading ? (
             <div className="text-h4h-dark-blue/60">Loading matches…</div>
-          ) : topMatch ? (
+          ) : matches.length > 0 ? (
             <section>
               <div className="flex items-center justify-between mb-4">
-                <h2 className="text-lg font-bold text-h4h-dark-blue">Your Next Match</h2>
+                <h2 className="text-lg font-bold text-h4h-dark-blue">Your Next Matches</h2>
                 <span className="text-xs font-medium bg-h4h-light-green/30 text-h4h-dark-green px-2 py-1 rounded-lg">
-                  {topMatch.politicalStance?.charAt(0).toUpperCase()}
-                  {topMatch.politicalStance?.slice(1)} • 75%+ similar
+                  {matches.length} profiles • Most to least similar
                 </span>
               </div>
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="bg-white rounded-3xl p-6 sm:p-8 border border-h4h-light-blue/40 shadow-sm hover:shadow-md transition-all relative overflow-hidden group"
-              >
-                <div className="absolute top-0 right-0 w-64 h-64 bg-h4h-light-blue/10 rounded-bl-[200px] pointer-events-none" />
-                <div className="flex flex-col sm:flex-row gap-6 items-start relative z-10">
-                  <div className="w-20 h-20 rounded-2xl bg-h4h-light-blue/20 flex items-center justify-center shrink-0 text-4xl">
-                    {topMatch.emoji || "👤"}
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                      <h3 className="text-2xl font-bold text-h4h-dark-blue">{topMatch.id}</h3>
-                      <div className="bg-h4h-dark-green text-white text-xs px-2 py-0.5 rounded-full font-bold shadow-sm">
-                        {Math.round(topMatch.matchScore)}% Compatible
+              <div className="space-y-4">
+                {matches.map((match, i) => (
+                  <motion.div
+                    key={match.id}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: i * 0.05 }}
+                    className="bg-white rounded-3xl p-6 sm:p-8 border border-h4h-light-blue/40 shadow-sm hover:shadow-md transition-all relative overflow-hidden group"
+                  >
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-h4h-light-blue/10 rounded-bl-[200px] pointer-events-none" />
+                    <div className="flex flex-col sm:flex-row gap-6 items-start relative z-10">
+                      <div className="w-20 h-20 rounded-2xl bg-h4h-light-blue/20 flex items-center justify-center shrink-0 text-4xl">
+                        {getStanceEmoji(match.politicalStance)}
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-2">
+                          <h3 className="text-2xl font-bold text-h4h-dark-blue">{match.id}</h3>
+                          <div className="bg-h4h-dark-green text-white text-xs px-2 py-0.5 rounded-full font-bold shadow-sm">
+                            {Math.round(match.similarityScore ?? match.matchScore)}% Similar
+                          </div>
+                        </div>
+                        <p className="text-h4h-dark-blue/70 text-sm mb-6">{match.traits}</p>
+                        <Link
+                          href={`/match/${match.id}`}
+                          className="inline-flex items-center gap-2 bg-h4h-dark-blue text-white px-6 py-3 rounded-2xl font-semibold text-sm hover:opacity-90 transition-opacity"
+                        >
+                          View Profile & Connect
+                          <ArrowRight className="w-4 h-4" />
+                        </Link>
                       </div>
                     </div>
-                    <p className="text-h4h-dark-blue/70 text-sm mb-6">{topMatch.traits}</p>
-                    <Link
-                    href={`/match/${topMatch.id}`}
-                    className="inline-flex items-center gap-2 bg-h4h-dark-blue text-white px-6 py-3 rounded-2xl font-semibold text-sm hover:opacity-90 transition-opacity"
-                    >
-                      View Profile & Connect
-                      <ArrowRight className="w-4 h-4" />
-                    </Link>
-                  </div>
-                </div>
-              </motion.div>
+                  </motion.div>
+                ))}
+              </div>
             </section>
           ) : (
             <div className="bg-white rounded-3xl p-8 border border-h4h-light-blue/40 shadow-sm">
-              <p className="text-h4h-dark-blue/70 mb-2">No matches yet.</p>
+              <p className="text-h4h-dark-blue/70 mb-2">No profiles left.</p>
               <p className="text-h4h-dark-blue/60 text-sm">
-                We match you with people 75%+ similar who have a different political stance. Share with friends who think differently!
+                Add more users to the pool or retake onboarding to explore lower-similarity profiles.
               </p>
             </div>
           )}

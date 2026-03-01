@@ -5,7 +5,14 @@
 
 const API_BASE = process.env.NEXT_PUBLIC_DEPOLARIZER_API || "http://localhost:5042";
 
-export type PoliticalStance = "progressive" | "conservative" | "moderate";
+export type PoliticalStance =
+  | "far-left"
+  | "left-leaning"
+  | "moderate-left"
+  | "centrist"
+  | "moderate-right"
+  | "right-leaning"
+  | "far-right";
 
 export interface Q11Option {
   id: string;
@@ -74,8 +81,15 @@ export async function findMatches(params: {
   return data;
 }
 
-export async function getMatches(userId: string): Promise<{ matches: Match[] }> {
-  const res = await fetch(`${API_BASE}/api/matches?user_id=${encodeURIComponent(userId)}`);
+export async function getMatches(
+  userId: string,
+  opts?: { minSimilarity?: number; maxSimilarity?: number; includeSameStance?: boolean }
+): Promise<{ matches: Match[] }> {
+  const params = new URLSearchParams({ user_id: userId });
+  if (typeof opts?.minSimilarity === "number") params.set("min_similarity", String(opts.minSimilarity));
+  if (typeof opts?.maxSimilarity === "number") params.set("max_similarity", String(opts.maxSimilarity));
+  if (opts?.includeSameStance) params.set("include_same_stance", "true");
+  const res = await fetch(`${API_BASE}/api/matches?${params.toString()}`);
   const data = await res.json();
   if (!res.ok) throw new Error(data.error || "Failed to fetch matches");
   return data;

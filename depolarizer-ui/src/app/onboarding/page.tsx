@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ArrowLeft, MapPin } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { fetchQuestions, embed, findMatches, type QuestionsResponse, type Q11Option } from "@/lib/api";
+import { fetchQuestions, embed, findMatches, type QuestionsResponse, type Q11Option, type PoliticalStance } from "@/lib/api";
 
 const STORAGE_KEYS = {
   USER_ID: "depolarizer_user_id",
@@ -13,6 +13,16 @@ const STORAGE_KEYS = {
   STANCE: "depolarizer_political_stance",
   CITY: "depolarizer_city",
 };
+
+const STANCE_OPTIONS: Q11Option[] = [
+  { id: "far-left", label: "Far-left" },
+  { id: "left-leaning", label: "Left-leaning" },
+  { id: "moderate-left", label: "Moderate-left" },
+  { id: "centrist", label: "Centrist" },
+  { id: "moderate-right", label: "Moderate-right" },
+  { id: "right-leaning", label: "Right-leaning" },
+  { id: "far-right", label: "Far-right" },
+];
 
 export default function OnboardingFlow() {
   const router = useRouter();
@@ -22,7 +32,7 @@ export default function OnboardingFlow() {
   const [questionsData, setQuestionsData] = useState<QuestionsResponse | null>(null);
 
   const [textAnswers, setTextAnswers] = useState<string[]>([]);
-  const [politicalStance, setPoliticalStance] = useState<string>("");
+  const [politicalStance, setPoliticalStance] = useState<PoliticalStance | "">("");
   const [city, setCity] = useState("");
 
   useEffect(() => {
@@ -68,7 +78,7 @@ export default function OnboardingFlow() {
       const { vector } = await embed(questions, answers);
       const { user_id, matches } = await findMatches({
         vector,
-        political_stance: politicalStance as "progressive" | "conservative" | "moderate",
+        political_stance: politicalStance as PoliticalStance,
         city: city || "Unknown",
         questions,
         answers,
@@ -113,11 +123,7 @@ export default function OnboardingFlow() {
 
   if (!questionsData) return null;
 
-  const q11Options = questionsData.q11?.options || [
-    { id: "progressive", label: "Progressive / Left-leaning" },
-    { id: "conservative", label: "Conservative / Right-leaning" },
-    { id: "moderate", label: "Moderate / Centrist" },
-  ];
+  const q11Options = STANCE_OPTIONS;
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
@@ -196,7 +202,7 @@ export default function OnboardingFlow() {
                     {q11Options.map((opt: Q11Option) => (
                       <button
                         key={opt.id}
-                        onClick={() => setPoliticalStance(opt.id)}
+                        onClick={() => setPoliticalStance(opt.id as PoliticalStance)}
                         className={`w-full p-4 rounded-2xl border text-left transition-all ${
                           politicalStance === opt.id
                             ? "border-h4h-dark-blue bg-h4h-dark-blue text-white shadow-md"

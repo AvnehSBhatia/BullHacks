@@ -21,7 +21,7 @@ export default function MatchProfilePreview() {
       return;
     }
     if (userId) {
-      getMatches(userId)
+      getMatches(userId, { minSimilarity: 0, includeSameStance: true })
         .then((d) => {
           const m = (d.matches || []).find((x) => x.id === id);
           setMatch(m || null);

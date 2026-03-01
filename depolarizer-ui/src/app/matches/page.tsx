@@ -6,6 +6,13 @@ import { ArrowLeft, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { getMatches, type Match } from "@/lib/api";
 
+const getStanceEmoji = (stance?: string | null) => {
+  const normalized = (stance || "").toLowerCase();
+  if (["far-left", "left-leaning", "moderate-left", "left", "center-left", "progressive"].includes(normalized)) return "🔵";
+  if (["moderate-right", "right-leaning", "far-right", "right", "center-right", "conservative"].includes(normalized)) return "🔴";
+  return "🟣";
+};
+
 export default function PastMatchesPage() {
   const [matches, setMatches] = useState<Match[]>([]);
   const [loading, setLoading] = useState(true);
@@ -74,7 +81,7 @@ export default function PastMatchesPage() {
                 className="bg-white rounded-3xl p-6 border border-h4h-light-blue/40 shadow-sm hover:shadow-md transition-shadow flex flex-col sm:flex-row sm:items-center gap-6"
               >
                 <div className="w-16 h-16 rounded-2xl bg-h4h-light-blue/20 flex items-center justify-center shrink-0 text-3xl">
-                  {match.emoji || "👤"}
+                  {getStanceEmoji(match.politicalStance)}
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-3 mb-2">
