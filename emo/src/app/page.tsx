@@ -12,10 +12,10 @@ export default function Home() {
           Hearth
         </div>
         <Link
-          href="/checkin"
+          href="/matching"
           className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
         >
-          Find a group
+          Profile
         </Link>
       </header>
 

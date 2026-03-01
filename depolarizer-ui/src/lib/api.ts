@@ -1,9 +1,9 @@
 /**
  * Depolarizer API client.
- * Set NEXT_PUBLIC_DEPOLARIZER_API=http://localhost:5042 in .env.local
+ * Set NEXT_PUBLIC_DEPOLARIZER_API=http://localhost:6262 in .env.local
  */
 
-const API_BASE = process.env.NEXT_PUBLIC_DEPOLARIZER_API || "http://localhost:5042";
+const API_BASE = process.env.NEXT_PUBLIC_DEPOLARIZER_API || "";
 
 export type PoliticalStance =
   | "far-left"

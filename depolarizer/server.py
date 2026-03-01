@@ -28,7 +28,7 @@ from train_political import load_checkpoint, get_device
 
 app = Flask(__name__, static_folder=".", static_url_path="")
 
-# CORS for Bridge UI (Next.js on port 3000)
+# CORS for Depolarizer UI (Next.js on port 3000)
 @app.after_request
 def _cors(resp):
     resp.headers["Access-Control-Allow-Origin"] = "http://localhost:3000"
@@ -392,6 +392,6 @@ if __name__ == "__main__":
     _load_niche_pool()
     print("Initializing database...")
     init_db()
-    port = int(os.environ.get("PORT", 5042))
+    port = int(os.environ.get("PORT", 6262))
     print(f"Depolarizer ready. Open http://127.0.0.1:{port}")
     app.run(host="0.0.0.0", port=port, debug=True, use_reloader=False)
