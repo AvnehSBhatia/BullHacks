@@ -1,8 +1,8 @@
 .next
 **/.next
+**/__pycache__/
+**/node_modules/
 emo/.next
-*_answers.json
-*_questions.json
 ./emo/node_modules
 ./emo/package-lock.json
 ./emo/package.json
@@ -14,3 +14,5 @@ emo/.next
 ./emo/tsconfig.node.json
 ./emo/tsconfig.app.json
 ./emo/tsconfig.base.json
+./emo/__pycache__
+./emo/node_modules
