@@ -1,0 +1,42 @@
+{
+  "question_sets": [
+    [
+      "How are you feeling right now?",
+      "What's been weighing on you lately?",
+      "How would you describe your energy today?",
+      "What do you most need from others right now?",
+      "How ready do you feel to share or listen?"
+    ],
+    [
+      "What mood are you in today?",
+      "What's taking up the most emotional space?",
+      "How intense does that feel on a scale of 1-10?",
+      "What helps you feel grounded or calm?",
+      "What would make today a little easier?"
+    ],
+    [
+      "How connected do you feel to people around you?",
+      "What's one thing you're grateful for today?",
+      "When you're stressed, what do you usually do?",
+      "Do you prefer to process emotions alone or with others?",
+      "What makes you feel understood?"
+    ]
+  ],
+  "responses": [
+    {"answers": ["Tired but okay.", "Work and family stress.", "Low, dragging.", "Just to be heard.", "Pretty ready."]},
+    {"answers": ["Anxious.", "Money and health worries.", "On edge, 7/10.", "A hug and no advice.", "Not very."]},
+    {"answers": ["Grateful and peaceful.", "Nothing major.", "Calm, steady.", "Connection.", "Very ready."]},
+    {"answers": ["Overwhelmed.", "Too many demands.", "Drained, 8/10.", "Space to breathe.", "Need to listen first."]},
+    {"answers": ["Hopeful.", "Career uncertainty.", "Medium energy.", "Validation.", "Ready to share."]},
+    {"answers": ["Sad.", "Loss and loneliness.", "Heavy, 6/10.", "Someone to sit with me.", "Would rather listen."]},
+    {"answers": ["Stressed.", "Deadlines and expectations.", "Wired and tired.", "Practical help.", "Depends on the day."]},
+    {"answers": ["Content.", "Nothing pressing.", "Good, balanced.", "Nothing right now.", "Always ready."]},
+    {"answers": ["Confused.", "Identity and purpose.", "Scattered.", "Patience.", "Not sure."]},
+    {"answers": ["Frustrated.", "Feeling stuck.", "Restless.", "Encouragement.", "Ready to vent."]},
+    {"answers": ["Numb.", "Burnout.", "Empty.", "Time alone.", "Not at all."]},
+    {"answers": ["Relieved.", "Just resolved something.", "Lighter.", "Celebration.", "Want to share good news."]},
+    {"answers": ["Lonely.", "Lack of connection.", "Isolated.", "Quality time.", "Need to talk."]},
+    {"answers": ["Excited.", "New opportunities.", "High energy.", "Support.", "Very ready."]},
+    {"answers": ["Mixed.", "Good and bad.", "Uneven.", "Understanding.", "Selectively."]}
+  ]
+}

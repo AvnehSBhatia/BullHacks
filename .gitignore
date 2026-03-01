@@ -1,8 +1,6 @@
 .next
 **/.next
 emo/.next
-*_answers.json
-*_questions.json
 ./emo/node_modules
 ./emo/package-lock.json
 ./emo/package.json
