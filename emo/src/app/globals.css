@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: var(--font-lora), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-background: #fcfbf9;
+  --color-foreground: #2d2a26;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #2d2a26;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #2d2a26;
+
+  --color-primary: #0284c7;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #f3f0ea;
+  --color-secondary-foreground: #2d2a26;
+
+  --color-muted: #f3f0ea;
+  --color-muted-foreground: #736b5e;
+
+  --color-accent: #c25e5e;
+  --color-accent-foreground: #ffffff;
+
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: #ffffff;
+
+  --color-border: #e8e4db;
+  --color-input: #e8e4db;
+  --color-ring: #0284c7;
+
+  --radius-lg: 0.75rem;
+  --radius-md: 0.5rem;
+  --radius-sm: 0.25rem;
+}
+
+@layer base {
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-border, currentColor);
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}

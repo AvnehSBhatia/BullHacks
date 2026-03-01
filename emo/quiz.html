@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emotional Check-in — Emo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="emo-page quiz">
+  <div class="emo-bg">
+    <div class="orb orb-1 small"></div>
+    <div class="orb orb-2"></div>
+  </div>
+  <div class="quiz-wrap">
+    <header class="quiz-header">
+      <a href="/" class="back-btn">← Back</a>
+      <div class="quiz-progress">
+        <span id="q-num">Question 1</span>
+        <span id="q-total">of 5</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+    </header>
+    <div class="quiz-card" id="quiz-card">
+      <h2 class="q-text" id="q-text">Loading…</h2>
+      <textarea id="q-answer" class="q-textarea" placeholder="Write your answer…" rows="4"></textarea>
+    </div>
+    <div class="quiz-actions">
+      <button id="btn-back" class="btn-ghost">← Back</button>
+      <button id="btn-next" class="btn-primary" disabled>Next →</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

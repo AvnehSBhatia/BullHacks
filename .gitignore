@@ -1,0 +1,16 @@
+.next
+**/.next
+emo/.next
+*_answers.json
+*_questions.json
+./emo/node_modules
+./emo/package-lock.json
+./emo/package.json
+./emo/tsconfig.json
+./emo/tsconfig.node.json
+./emo/tsconfig.app.json
+./emo/tsconfig.base.json
+./emo/tsconfig.json
+./emo/tsconfig.node.json
+./emo/tsconfig.app.json
+./emo/tsconfig.base.json
